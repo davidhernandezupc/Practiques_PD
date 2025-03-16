@@ -12,7 +12,7 @@ WebServer server(80);
 String HTML = "<!DOCTYPE html>\
 <html>\
 <body>\
-<h1>My Primera Pagina con ESP32 - Station Mode &#128522; YUPIIIIIIIII :)</h1>\
+<h1>My Primera Pagina con ESP32 - Station Mode &#128522; :)</h1>\
 </body>\
 </html>";
 
