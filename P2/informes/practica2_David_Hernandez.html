@@ -1,0 +1,359 @@
+<!DOCTYPE html><html><head>
+      <title>practica2_David_Hernandez</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/davidhm/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.17/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="practica-2--interrupciones">PRACTICA 2 : INTERRUPCIONES </h1>
+<h3 id="material">MATERIAL </h3>
+<p>Para esta practica necesitaremos el microcontrolador ESP32, cables, protoboard (opcional), y un pulsador.</p>
+  <div style="display: flex; justify-content: center; gap: 10px;">
+      <img src="https://ae04.alicdn.com/kf/S8dee2f4cafc344e1b57ebc21ad5c11a4P.jpg" alt="ESP32" width="150">
+      <img src="https://cdn.bodanius.com/media/1/0d8100207_breadboard-wit-400-punten_x.png" alt="Protoaboard" width="150">
+      <img src="https://ja-bots.com/wp-content/uploads/2022/04/Pulsador-2-pines-2-.jpg" alt="pulsador" width="150">
+      <img src="https://www.topcable.com/blog-electric-cable/wp-content/uploads/2014/11/topflex-h05vk-h07vk-colores.jpg" alt="Cables" width="150">
+  </div>
+<h3 id="objetivo-y-funcionalidad-de-la-practica">OBJETIVO Y FUNCIONALIDAD DE LA PRACTICA </h3>
+<p>El objetivo de la practica es comprender el funcionamiento de las interrupciones.</p>
+<p>Para lo cual realizaremos una practica  donde controlaremos  2 leds  de una forma periódica  y una entrada ; de forma que el uso de la entrada provoque un cambio de frecuencia de las oscilaciones  pero solo en un led.</p>
+<h2 id="practica-a-interrupción-por-gpio">Practica A interrupción por GPIO </h2>
+<p>El montaje para esta primera parte es el siguiente:<br>
+<img src="https://descubrearduino.com/wp-content/uploads/2020/06/conexion-botones-ESP32-para-interrupci%C3%B3n-GPIO.png" alt=""></p>
+<ol>
+<li>Estructura Button: Define un botón con su pin de conexión, un contador de presiones y un indicador de si está presionado.</li>
+<li>Objeto button1: Se crea un botón en el pin 18, con un contador de presiones inicial en 0 y pressed en false.</li>
+<li>Interrupción (isr()): Cada vez que se presiona el botón, se incrementa el contador de presiones y se marca el botón comopresionado.</li>
+<li>Configuración (setup()): Se inicializa la comunicación serial, se configura el pin 18 como entrada y se activa la interrupción para ejecutar isr() cuando el botón se presiona.</li>
+<li>Bucle principal (loop()): Si el botón ha sido presionado, seimprime cuántas veces se ha presionado y luego se restablece elindicador de “presionado”.</li>
+</ol>
+<p><strong>Código comentado</strong></p>
+<pre data-role="codeBlock" data-info="c" class="language-c c"><code>  <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;Arduino.h&gt;</span>  <span class="token comment">// Librería base de Arduino</span></span>
+
+  <span class="token comment">// Estructura contendrá información sobre un botón</span>
+  <span class="token keyword keyword-struct">struct</span> <span class="token class-name">Button</span> <span class="token punctuation">{</span>
+      <span class="token keyword keyword-const">const</span> <span class="token class-name">uint8_t</span> PIN<span class="token punctuation">;</span>            <span class="token comment">// Define el pin de entrada para el botón.</span>
+      <span class="token class-name">uint32_t</span> numberKeyPresses<span class="token punctuation">;</span>    <span class="token comment">// Variable nº veces que presiona el botón. (Variable)</span>
+      bool pressed<span class="token punctuation">;</span>                 <span class="token comment">// Variable booleana si esta presionado.</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// Inicialización de una variable de tipo Button llamada button1</span>
+  Button button1 <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">18</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> false<span class="token punctuation">}</span><span class="token punctuation">;</span>  
+  <span class="token comment">// Está conectado al pin 18, </span>
+  <span class="token comment">// Inicia con 0 presiones </span>
+  <span class="token comment">// Está en estado no presionado.</span>
+
+  <span class="token comment">// ISR (Interrupción de servicio) que se llama cuando ocurre la interrupción</span>
+  <span class="token keyword keyword-void">void</span> IRAM_ATTR <span class="token function">isr</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+      <span class="token comment">// Se incrementa cada vez que se detecta un evento de interrupción.</span>
+      button1<span class="token punctuation">.</span>numberKeyPresses <span class="token operator">+=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+      <span class="token comment">// Se establece que el botón ha sido presionado.</span>
+      button1<span class="token punctuation">.</span>pressed <span class="token operator">=</span> true<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword keyword-void">void</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// Inicia la comunicación serie por el monitor serial</span>
+      Serial<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token number">115200</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      
+      <span class="token function">delay</span><span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// Un pequeño retraso para asegurar que la comunicación serial se haya establecido antes de comenzar.</span>
+
+      <span class="token comment">// Configura el pin del botón como una entrada con resistencia pull-up interna (esto asegura que el pin estará en alto cuando el botón no se presione)</span>
+      <span class="token function">pinMode</span><span class="token punctuation">(</span>button1<span class="token punctuation">.</span>PIN<span class="token punctuation">,</span> INPUT_PULLUP<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token comment">// Asocia una interrupción al pin del botón (pin 18 en este caso), la interrupción se ejecutará cuando el pin pase de nivel alto a bajo (FALLING)</span>
+      <span class="token function">attachInterrupt</span><span class="token punctuation">(</span>button1<span class="token punctuation">.</span>PIN<span class="token punctuation">,</span> isr<span class="token punctuation">,</span> FALLING<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      
+      <span class="token comment">// Imprime un mensaje indicando que el ESP32 ha arrancado correctamente</span>
+      Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"ESP32-S3 iniciado corectamnte!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword keyword-void">void</span> <span class="token function">loop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// Verifica si el botón ha sido presionado (lo que se indica con 'pressed' como true)</span>
+      <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>button1<span class="token punctuation">.</span>pressed<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token comment">// Imprime el número de veces que el botón ha sido presionado en el monitor serial</span>
+          Serial<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Button 1 has been pressed %u times\n"</span><span class="token punctuation">,</span> button1<span class="token punctuation">.</span>numberKeyPresses<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          
+          <span class="token comment">// Restablece el estado de la variable 'pressed' a false para evitar imprimir repetidamente el mensaje mientras el botón sigue presionado</span>
+          button1<span class="token punctuation">.</span>pressed <span class="token operator">=</span> false<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+
+      <span class="token comment">// Desactivar la interrupción después de 1 minuto (60000 ms)</span>
+      <span class="token keyword keyword-static">static</span> <span class="token class-name">uint32_t</span> lastMillis <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>  <span class="token comment">// Variable estática para almacenar el último tiempo en el que se desactivó la interrupción</span>
+      
+      <span class="token comment">// Comprueba si ha pasado 1 minuto desde la última vez que se desactivó la interrupción</span>
+      <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span><span class="token function">millis</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> lastMillis <span class="token operator">&gt;</span> <span class="token number">60000</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          lastMillis <span class="token operator">=</span> <span class="token function">millis</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// Actualiza el tiempo actual</span>
+          <span class="token function">detachInterrupt</span><span class="token punctuation">(</span>button1<span class="token punctuation">.</span>PIN<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// Desactiva la interrupción en el pin del botón (pin 18)</span>
+          Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Interrupt Detached!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// Imprime un mensaje indicando que la interrupción ha sido desactivada</span>
+      <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</code></pre><h4 id="salida-en-el-monitor-serial">Salida en el monitor serial </h4>
+<ul>
+<li>Cuando arranca el sistema aparece un mensaje de inicialización.</li>
+</ul>
+<blockquote>
+<p>ESP32-S3 iniciado corectamnte!</p>
+</blockquote>
+<ul>
+<li>Cada vez que presionas el botón aparece un mensaje por pantalla, y la variable totalInterruptCounter va incrementando y la muestra por pantalla.</li>
+</ul>
+<blockquote>
+<p>Button 1 has been pressed 1 times<br>
+Button 1 has been pressed 2 times<br>
+Button 1 has been pressed 3 times</p>
+</blockquote>
+<ul>
+<li>Una vez haya transcurrido un minuto, se desactiva la interrupción y imprime un mensaje por pantalla.</li>
+</ul>
+<blockquote>
+<p>Interrupt Detached!</p>
+</blockquote>
+<h2 id="practica-b-interrupción-por-timer">Practica B interrupción por timer </h2>
+<ol>
+<li>Variables globales: Se declaran dos contadores: interruptCounterpara contar las interrupciones y totalInterruptCounter para llevar untotal de todas las interrupciones. Se configura un temporizador dehardware (hw_timer_t).</li>
+<li>Interrupción (onTimer()): Se define una función que incrementa el contador de interrupciones cada vez que el temporizador genera una interrupción.</li>
+<li>Configuración (setup()): Se inicializa la comunicación serial, se configura el temporizador para que se active cada 1 segundo (1,000000 microsegundos) y se habilita la interrupción.</li>
+<li>Bucle principal (loop()): Cada vez que ocurre una interrupción,se incrementa el contador total y se imprime en el monitor serial elnúmero total de interrupciones que han ocurrido.</li>
+</ol>
+<p><strong>Código comentado</strong></p>
+<pre data-role="codeBlock" data-info="c" class="language-c c"><code>  <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;Arduino.h&gt;</span> <span class="token comment">// Librería base de Arduino</span></span>
+
+  <span class="token keyword keyword-volatile">volatile</span> <span class="token keyword keyword-int">int</span> interruptCounter<span class="token punctuation">;</span> <span class="token comment">// Variable que llevará el nº interrupciones</span>
+  <span class="token keyword keyword-int">int</span> totalInterruptCounter <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment">// Guarda el total de interrupciones</span>
+  <span class="token class-name">hw_timer_t</span> <span class="token operator">*</span> timer <span class="token operator">=</span> <span class="token constant">NULL</span><span class="token punctuation">;</span> <span class="token comment">// Puntero al temporizador de hardware</span>
+  
+  <span class="token comment">// Mutex para la protección de acceso a recursos compartidos </span>
+  portMUX_TYPE timerMux <span class="token operator">=</span> portMUX_INITIALIZER_UNLOCKED<span class="token punctuation">;</span>  
+
+  <span class="token comment">// Función que se ejecuta cuando ocurre la interrupción del temporizador</span>
+  <span class="token keyword keyword-void">void</span> IRAM_ATTR <span class="token function">onTimer</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Entramos en la sección crítica para evitar acceso simultáneo al contador.</span>
+    <span class="token function">portENTER_CRITICAL_ISR</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>timerMux<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    interruptCounter<span class="token operator">++</span><span class="token punctuation">;</span>   <span class="token comment">// Incrementa el contador de interrupciones</span>
+    <span class="token function">portEXIT_CRITICAL_ISR</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>timerMux<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Salimos de la sección crítica</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword keyword-void">void</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Inicializamos la comunicación serie</span>
+    Serial<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token number">115200</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    <span class="token comment">// Inicializamos el temporizador</span>
+    timer <span class="token operator">=</span> <span class="token function">timerBegin</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">80</span><span class="token punctuation">,</span> true<span class="token punctuation">)</span><span class="token punctuation">;</span>  
+    <span class="token comment">// canal 0, prescaler 80, dirección de cuenta hacia abajo</span>
+    
+    <span class="token comment">// Adjuntamos la función onTimer a la interrupción del temporizador </span>
+    <span class="token function">timerAttachInterrupt</span><span class="token punctuation">(</span>timer<span class="token punctuation">,</span> <span class="token operator">&amp;</span>onTimer<span class="token punctuation">,</span> true<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">//La interrupción se llama cada vez que el temporizador se desborda</span>
+    
+    <span class="token comment">// Configuramos el temporizador para que se dispare cada 1 segundo</span>
+    <span class="token function">timerAlarmWrite</span><span class="token punctuation">(</span>timer<span class="token punctuation">,</span> <span class="token number">1000000</span><span class="token punctuation">,</span> true<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    <span class="token comment">// Habilitamos la alarma para que se active el temporizador</span>
+    <span class="token function">timerAlarmEnable</span><span class="token punctuation">(</span>timer<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword keyword-void">void</span> <span class="token function">loop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Si el contador de interrupciones ha sido incrementado</span>
+    <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>interruptCounter <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// Entramos en la sección crítica para evitar el acceso simultáneo</span>
+      <span class="token function">portENTER_CRITICAL</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>timerMux<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token comment">// Decrementa el contador de interrupciones </span>
+      interruptCounter<span class="token operator">--</span><span class="token punctuation">;</span>  
+      <span class="token comment">//(porque se ha procesado una interrupción)</span>
+
+      <span class="token comment">// Salimos de la sección crítica</span>
+      <span class="token function">portEXIT_CRITICAL</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>timerMux<span class="token punctuation">)</span><span class="token punctuation">;</span>  
+      
+      <span class="token comment">// Incrementa el contador total de interrupciones</span>
+      totalInterruptCounter<span class="token operator">++</span><span class="token punctuation">;</span>
+      
+      <span class="token comment">// Imprime la cantidad total de interrupciones que han ocurrido</span>
+      Serial<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"An interrupt as occurred. Total number: "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>totalInterruptCounter<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</code></pre><h4 id="salida-en-el-monitor-serial-1">Salida en el monitor serial </h4>
+<ol>
+<li>El temporizador se desborda cada 1 segundo.</li>
+<li>El contador interruptCounter se incrementa cada vez que ocurre el desbordamiento.</li>
+<li>El valor de totalInterruptCounter se incrementa cada vez que se procesa una interrupción (cuando el código en el loop() detecta que interruptCounter &gt; 0).</li>
+<li>Cada vez que se procesa una interrupción, se muestra el mensaje "An interrupt has occurred. Total number: X", donde X es el número total de interrupciones procesadas.</li>
+</ol>
+<ul>
+<li>Después de haber pasado un segundo, el contador de interrupciones se incrementará, y el programa mostrará el mensaje en el monitor serie.</li>
+</ul>
+<blockquote>
+<p>An interrupt as occurred. Total number: 1<br>
+An interrupt as occurred. Total number: 2<br>
+An interrupt as occurred. Total number: 3<br>
+An interrupt as occurred. Total number: 4<br>
+An interrupt as occurred. Total number: 5<br>
+An interrupt as occurred. Total number: 6<br>
+An interrupt as occurred. Total number: 7<br>
+An interrupt as occurred. Total number: 8<br>
+An interrupt as occurred. Total number: 9<br>
+An interrupt as occurred. Total number: 10<br>
+An interrupt as occurred. Total number: 11<br>
+An interrupt as occurred. Total number: 12<br>
+An interrupt as occurred. Total number: 13<br>
+An interrupt as occurred. Total number: 14<br>
+An interrupt as occurred. Total number: 15<br>
+An interrupt as occurred. Total number: 16<br>
+An interrupt as occurred. Total number: 17<br>
+An interrupt as occurred. Total number: 18<br>
+An interrupt as occurred. Total number: 19<br>
+An interrupt as occurred. Total number: 20</p>
+</blockquote>
+<p>Este comportamiento seguiría repitiéndose, siempre aumentando el contador totalInterruptCounter en 1 cada segundo que pasa.</p>
+<h3 id="ejercicio-voluntario">EJERCICIO VOLUNTARIO </h3>
+<p><strong>Código generado por ChatGPT comentado</strong></p>
+<pre data-role="codeBlock" data-info="c" class="language-c c"><code>  <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;Arduino.h&gt;</span></span>
+
+<span class="token keyword keyword-const">const</span> <span class="token keyword keyword-int">int</span> ledPin <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>        <span class="token comment">// Pin donde está conectado el LED</span>
+<span class="token keyword keyword-unsigned">unsigned</span> <span class="token keyword keyword-long">long</span> previousMillis <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-int">int</span> blinkFrequency <span class="token operator">=</span> <span class="token number">1000</span><span class="token punctuation">;</span>    <span class="token comment">// Frecuencia inicial (1000ms)</span>
+bool ledState <span class="token operator">=</span> false<span class="token punctuation">;</span>
+
+<span class="token comment">// Variables para simular los pulsadores</span>
+<span class="token keyword keyword-unsigned">unsigned</span> <span class="token keyword keyword-long">long</span> lastDebounceTime <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-unsigned">unsigned</span> <span class="token keyword keyword-long">long</span> debounceDelay <span class="token operator">=</span> <span class="token number">200</span><span class="token punctuation">;</span>   <span class="token comment">// Filtro de rebote (200ms)</span>
+bool lastButtonStateUp <span class="token operator">=</span> LOW<span class="token punctuation">;</span>
+bool lastButtonStateDown <span class="token operator">=</span> LOW<span class="token punctuation">;</span>
+
+<span class="token keyword keyword-void">void</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  Serial<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token number">115200</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+  <span class="token function">pinMode</span><span class="token punctuation">(</span>ledPin<span class="token punctuation">,</span> OUTPUT<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Programa iniciado..."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword keyword-void">void</span> <span class="token function">loop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword keyword-unsigned">unsigned</span> <span class="token keyword keyword-long">long</span> currentMillis <span class="token operator">=</span> <span class="token function">millis</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// Verifica si el monitor serial está funcionando</span>
+  Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Esperando pulsaciones..."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// Simulamos la presion de un pulsador para aumentar la frecuencia</span>
+  <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span><span class="token function">digitalRead</span><span class="token punctuation">(</span><span class="token number">23</span><span class="token punctuation">)</span> <span class="token operator">==</span> HIGH <span class="token operator">&amp;&amp;</span> currentMillis <span class="token operator">-</span> lastDebounceTime <span class="token operator">&gt;</span> debounceDelay<span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+    blinkFrequency <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">,</span> blinkFrequency <span class="token operator">-</span> <span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// Limita la frecuencia mínima a 100ms</span>
+    Serial<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Frecuencia aumentada: "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    Serial<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span>blinkFrequency<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"ms"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    lastDebounceTime <span class="token operator">=</span> currentMillis<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// Simula la presion de otro pulsador para disminuir la frecuencia</span>
+  <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span><span class="token function">digitalRead</span><span class="token punctuation">(</span><span class="token number">22</span><span class="token punctuation">)</span> <span class="token operator">==</span> HIGH <span class="token operator">&amp;&amp;</span> currentMillis <span class="token operator">-</span> lastDebounceTime <span class="token operator">&gt;</span> debounceDelay<span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+    blinkFrequency <span class="token operator">=</span> <span class="token function">min</span><span class="token punctuation">(</span><span class="token number">5000</span><span class="token punctuation">,</span> blinkFrequency <span class="token operator">+</span> <span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// Limita la frecuencia máxima a 5000ms</span>
+    Serial<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Frecuencia disminuida: "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    Serial<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span>blinkFrequency<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"ms"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    lastDebounceTime <span class="token operator">=</span> currentMillis<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// Control del LED usando el temporizador</span>
+  <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>currentMillis <span class="token operator">-</span> previousMillis <span class="token operator">&gt;=</span> blinkFrequency<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    previousMillis <span class="token operator">=</span> currentMillis<span class="token punctuation">;</span>
+
+    <span class="token comment">// Cambia el estado del LED</span>
+    ledState <span class="token operator">=</span> <span class="token operator">!</span>ledState<span class="token punctuation">;</span>
+    <span class="token function">digitalWrite</span><span class="token punctuation">(</span>ledPin<span class="token punctuation">,</span> ledState<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><p>Como no tenia pulsadores fisicos he adaptado el código para utilizar el teclado del ordenador como si fuera el pulsador y asi poder augmentar o disminuir la frecuencia del parpadeo del LED.</p>
+<p><strong>Código adaptado a teclado</strong></p>
+<pre data-role="codeBlock" data-info="c" class="language-c c"><code>  <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;Arduino.h&gt;</span></span>
+
+  <span class="token keyword keyword-const">const</span> <span class="token keyword keyword-int">int</span> ledPin <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>        <span class="token comment">// Pin donde está conectado el LED</span>
+  <span class="token keyword keyword-unsigned">unsigned</span> <span class="token keyword keyword-long">long</span> previousMillis <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token keyword keyword-int">int</span> blinkFrequency <span class="token operator">=</span> <span class="token number">1000</span><span class="token punctuation">;</span>    <span class="token comment">// Frecuencia inicial (1000ms)</span>
+  bool ledState <span class="token operator">=</span> false<span class="token punctuation">;</span>
+
+  <span class="token keyword keyword-void">void</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    Serial<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token number">115200</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+    <span class="token function">pinMode</span><span class="token punctuation">(</span>ledPin<span class="token punctuation">,</span> OUTPUT<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Programa iniciado..."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Usa 'u' para aumentar la frecuencia y 'd' para disminuirla."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword keyword-void">void</span> <span class="token function">loop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-unsigned">unsigned</span> <span class="token keyword keyword-long">long</span> currentMillis <span class="token operator">=</span> <span class="token function">millis</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// Verifica si hay datos disponibles en el Monitor Serial</span>
+    <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>Serial<span class="token punctuation">.</span><span class="token function">available</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword keyword-char">char</span> receivedChar <span class="token operator">=</span> Serial<span class="token punctuation">.</span><span class="token function">read</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token comment">// Simula el comportamiento del pulsador UP (aumentar frecuencia)</span>
+      <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>receivedChar <span class="token operator">==</span> <span class="token char">'u'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+        blinkFrequency <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">,</span> blinkFrequency <span class="token operator">-</span> <span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// Limita la frecuencia mínima a 100ms</span>
+        Serial<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Frecuencia aumentada: "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Serial<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span>blinkFrequency<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"ms"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+
+      <span class="token comment">// Simula el comportamiento del pulsador DOWN (disminuir frecuencia)</span>
+      <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>receivedChar <span class="token operator">==</span> <span class="token char">'d'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+        blinkFrequency <span class="token operator">=</span> <span class="token function">min</span><span class="token punctuation">(</span><span class="token number">5000</span><span class="token punctuation">,</span> blinkFrequency <span class="token operator">+</span> <span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// Limita la frecuencia máxima a 5000ms</span>
+        Serial<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Frecuencia disminuida: "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Serial<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span>blinkFrequency<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"ms"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// Control del LED usando el temporizador</span>
+    <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>currentMillis <span class="token operator">-</span> previousMillis <span class="token operator">&gt;=</span> blinkFrequency<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      previousMillis <span class="token operator">=</span> currentMillis<span class="token punctuation">;</span>
+
+      <span class="token comment">// Cambia el estado del LED</span>
+      ledState <span class="token operator">=</span> <span class="token operator">!</span>ledState<span class="token punctuation">;</span>
+      <span class="token function">digitalWrite</span><span class="token punctuation">(</span>ledPin<span class="token punctuation">,</span> ledState<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</code></pre><p>Una vez cargas el programa a la ESP32 y abres el monitor no aparece nada, y su frecuencia se fija en 1000ms.</p>
+<ul>
+<li>Si clicas a la tecla 'u' disminuye el valor 100ms menos y el parpadeo del LED es más rapido.</li>
+<li>Si clicas a la 'd' augmentas el valor 100ms y por lo tanto ralentizas el parpadeo.<br>
+Teneis que  hacer que chatgpt  os genere un codigo  para esp32  arduino</li>
+</ul>
+<p>He realizado una prueba en el monitor serie clicando 2 veces a la 'u' y 3 veces a la 'd':</p>
+<blockquote>
+<p>Frecuencia aumentada: 900ms<br>
+Frecuencia aumentada: 800ms<br>
+Frecuencia disminuida: 900ms<br>
+Frecuencia disminuida: 1000ms<br>
+Frecuencia disminuida: 1100ms</p>
+</blockquote>
+<p>La frecuencia se cambia correctamente.<br>
+(He subido los 2 códigos a Github para poder comprobar que funcionan correctamente)</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

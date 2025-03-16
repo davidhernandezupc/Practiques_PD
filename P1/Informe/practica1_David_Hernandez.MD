@@ -25,7 +25,7 @@
 
   *Antes hay que iniciarlo con la función Serial.begin(velocidad del monitor, normalmente 115200). También hay que incluir en el archivo .ini la velocidad del monitor de la siguiente forma: monitor_speed = 115200. Y por último el microcontrolador tiene que estar conectado al ordenador por el puerto COM, no el USB.*
 
-    **Código comentado:**
+  **Código comentado:**
     
   ```c
   #include <Arduino.h> 
@@ -187,7 +187,7 @@
         delay(DELAY);
     }
   ```
-  ##### Diagrama de flujo
+  ##### Diagrama de flujo (visualizar en .md o .html)
   ```mermaid
     graph TD;
     Start --> |Iniciar comunicación serie| Init_Serial
@@ -201,7 +201,7 @@
     Serial_OFF --> |Esperar 1000ms| Delay2
     Delay2 --> Loop 
   ```
-  ##### Diagrama de Tiempos
+  ##### Diagrama de Tiempos (visualizar en .md o .html)
 
   ```wavedrom
     {
