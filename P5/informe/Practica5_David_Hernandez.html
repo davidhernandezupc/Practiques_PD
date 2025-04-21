@@ -1,0 +1,1030 @@
+<!DOCTYPE html><html><head>
+      <title>Practica5_David_Hernandez</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/davidhm/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.18/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="practica-5---buses-de-comunicación-i-introducción-y-i2c">PRACTICA 5 :  Buses de comunicación I (introducción y I2c) </h1>
+<h3 id="material">MATERIAL </h3>
+<p>Para esta practica necesitaremos el microcontrolador ESP32, un Display oled I2C SSD1306 OLED, un Sensor Max3012 medidor de oxigeno en sangre y frecuencia cardiaca, un escáner I2C cables y una protoboard.</p>
+  <div style="display: flex; justify-content: center; gap: 10px;">
+      <img src="https://ae04.alicdn.com/kf/S8dee2f4cafc344e1b57ebc21ad5c11a4P.jpg" alt="ESP32" width="150">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/71UsAe%2BoikL._AC_SL1443_.jpg" alt="ESP32" width="150">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/61Ig%2BO6utCL._AC_SL1000_.jpg" alt="ESP32" width="150">
+  </div>
+<h3 id="objetivo-y-funcionalidad-de-la-practica">OBJETIVO Y FUNCIONALIDAD DE LA PRACTICA </h3>
+<p>El objetivo de la practica es comprender el funcionamiento de los buses<br>
+sistemas de comunicación entreperiféricos;  estos elementos pueden ser internos o externos  al procesador.</p>
+<p>Esta es la primera practica de  4 donde se verán los buses i2c, spi, i2s , usart.</p>
+<p>Para lo cual realizaremos una practica en cada caso donde controlaremos un periférico de ejemplo</p>
+<h2 id="ejercicio-practico-1--escáner-i2c">Ejercicio Practico 1  ESCÁNER I2C </h2>
+<p>Programar el siguiente codigo,  colocar varios dispositivos  I2C como en la figura siguiente</p>
+<p><img src="https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2019/09/I2C-communication-protocol-ESP32.png?resize=1024%2C577&amp;quality=100&amp;strip=all&amp;ssl=1" alt=""></p>
+<p><strong>Código comentado</strong></p>
+<pre data-role="codeBlock" data-info="c" class="language-c c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;Arduino.h&gt;</span>  <span class="token comment">// Librería base de Arduino</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;Wire.h&gt;</span>     <span class="token comment">// Librería para comunicación I2C</span></span>
+
+<span class="token keyword keyword-void">void</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  Wire<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>       <span class="token comment">// Inicia la comunicación I2C</span>
+  Serial<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token number">115200</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// Inicia la comunicación serie a 115200 baudios</span>
+
+<span class="token comment">// Si se usa en un Arduino Leonardo, espera a que el monitor serie esté listo</span>
+  <span class="token keyword keyword-while">while</span> <span class="token punctuation">(</span><span class="token operator">!</span>Serial<span class="token punctuation">)</span><span class="token punctuation">;</span>    
+  Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"\nI2C Scanner"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// Mensaje inicial</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword keyword-void">void</span> <span class="token function">loop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  byte error<span class="token punctuation">,</span> address<span class="token punctuation">;</span>  <span class="token comment">// Variables para almacenar errores y direcciones I2C</span>
+  <span class="token keyword keyword-int">int</span> nDevices <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>     <span class="token comment">// Contador de dispositivos encontrados</span>
+
+  Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Scanning..."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// Mensaje indicando el inicio del escaneo</span>
+
+  <span class="token comment">// Bucle para recorrer todas las direcciones I2C posibles (1 a 127)</span>
+  <span class="token keyword keyword-for">for</span><span class="token punctuation">(</span>address <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> address <span class="token operator">&lt;</span> <span class="token number">127</span><span class="token punctuation">;</span> address<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Inicia comunicación con la dirección actual</span>
+    Wire<span class="token punctuation">.</span><span class="token function">beginTransmission</span><span class="token punctuation">(</span>address<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+    <span class="token comment">// Finaliza la transmisión y obtiene el estado</span>
+    error <span class="token operator">=</span> Wire<span class="token punctuation">.</span><span class="token function">endTransmission</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+
+    <span class="token comment">// Si no hay error, se encontró un dispositivo en esta dirección</span>
+    <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>error <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+      Serial<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"I2C device found at address 0x"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">// Agregar un 0 si la dirección es menor a 0x10 para formato correcto</span>
+      <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>address <span class="token operator">&lt;</span> <span class="token number">16</span><span class="token punctuation">)</span> Serial<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"0"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+      <span class="token comment">// Imprimir dirección en formato hexadecimal</span>
+      Serial<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span>address<span class="token punctuation">,</span> HEX<span class="token punctuation">)</span><span class="token punctuation">;</span>  
+      Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"  !"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token comment">// Incrementar el contador de dispositivos encontrados</span>
+      nDevices<span class="token operator">++</span><span class="token punctuation">;</span>  
+    <span class="token punctuation">}</span>
+    <span class="token keyword keyword-else">else</span> <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>error <span class="token operator">==</span> <span class="token number">4</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token comment">// Error desconocido</span>
+      Serial<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Unknown error at address 0x"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>address <span class="token operator">&lt;</span> <span class="token number">16</span><span class="token punctuation">)</span> Serial<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"0"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>address<span class="token punctuation">,</span> HEX<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// Mensaje final según el número de dispositivos encontrados</span>
+  <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>nDevices <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+    Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"No I2C devices found\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword keyword-else">else</span>
+    Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"done\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token function">delay</span><span class="token punctuation">(</span><span class="token number">5000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// Esperar 5 segundos antes de volver a escanear</span>
+<span class="token punctuation">}</span>
+</code></pre><p><strong>Foto montaje</strong><br>
+<a href="https://drive.google.com/file/d/1vs1VN9QIzH5K3ueYBCw7uf7ni1jp9cpB/view?usp=share_link">https://drive.google.com/file/d/1vs1VN9QIzH5K3ueYBCw7uf7ni1jp9cpB/view?usp=share_link</a><br>
+<a href="https://drive.google.com/file/d/1GJvTIxlFmwjap0G-EwwYgzl7vHiS0zgy/view?usp=share_link">https://drive.google.com/file/d/1GJvTIxlFmwjap0G-EwwYgzl7vHiS0zgy/view?usp=share_link</a></p>
+<p><strong>Descibir la salida por el puerto serie</strong></p>
+<p>Si no hay dispositivos o no lo encuentra:</p>
+<blockquote>
+<p>I2C Scanner<br>
+Scanning...<br>
+No I2C devices found<br>
+done</p>
+</blockquote>
+<p>Si ha encontrado el dispositivo:</p>
+<blockquote>
+<p>I2C Scanner<br>
+Scanning...<br>
+I2C device found at address 0x3C  !<br>
+done</p>
+</blockquote>
+<p>Si ha encontrado más de un dispositivo:</p>
+<blockquote>
+<p>I2C Scanner<br>
+Scanning...<br>
+I2C device found at address 0x68  !<br>
+I2C device found at address 0x3C  !<br>
+done</p>
+</blockquote>
+<p>Si ha tenido un error desconocido en alguna dirección:</p>
+<blockquote>
+<p>I2C Scanner<br>
+Scanning...<br>
+I2C device found at address 0x3C  !<br>
+Unknown error at address 0x50<br>
+done</p>
+</blockquote>
+<ul>
+<li>El Monitor Serie muestra qué dispositivos están conectados al bus I2C y en qué direcciones.</li>
+<li>Si hay errores, indica problemas de conexión.</li>
+<li>El escaneo se repite cada 5 segundos para verificar cambios en la conexión.</li>
+</ul>
+<p><strong>Explicar el funcionamiento</strong></p>
+<ul>
+<li>Se inicializa el bus I2C y la comunicación serie.</li>
+<li>Se recorre cada dirección I2C del 1 al 127.</li>
+<li>El ESP32 intenta comunicarse con cada dirección.</li>
+<li>Si un dispositivo responde, se muestra en el Monitor Serie.</li>
+<li>Si hay un error, también se notifica.</li>
+<li>Cada 5 segundos, se vuelve a escanear.</li>
+</ul>
+<h2 id="ejercicio-practico-2">Ejercicio Practico 2 </h2>
+<p>A realizar  como ejercicio  en casa</p>
+<ol>
+<li>Realizar un programa que utilice un dispositivo i2c como por ejemplo alguno de los  siguientes</li>
+</ol>
+<hr>
+<h2 id="display-oled-i2c-ssd1306-oled---display-de-leds-organicos-"><strong>Display oled</strong> <strong>I2C SSD1306 OLED</strong>  ( display de leds organicos ) </h2>
+<p>referencia <a href="https://programarfacil.com/blog/arduino-blog/ssd1306-pantalla-oled-con-arduino/">https://programarfacil.com/blog/arduino-blog/ssd1306-pantalla-oled-con-arduino/</a></p>
+<p><img src="https://images-na.ssl-images-amazon.com/images/I/71UsAe%2BoikL._AC_SL1443_.jpg" alt=""></p>
+<p>o este otro formato</p>
+<p><img src="https://programarfacil.com/wp-content/uploads/2020/01/modulo-ssd1306-pantalla-oled-arduino.jpg" alt=""></p>
+<p>descargar la libreria   <a href="https://github.com/lexus2k/ssd1306">https://github.com/lexus2k/ssd1306</a>  medienate  platformio</p>
+<h5 id="código">Código: </h5>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>/**************************************************************************
+ This is an example for our Monochrome OLEDs based on SSD1306 drivers
+
+ Pick one up today in the adafruit shop!
+ ------&gt; http://www.adafruit.com/category/63_98
+
+ This example is for a 128x32 pixel display using I2C to communicate
+ 3 pins are required to interface (two I2C and one reset).
+
+ Adafruit invests time and resources providing this open
+ source code, please support Adafruit and open-source
+ hardware by purchasing products from Adafruit!
+
+ Written by Limor Fried/Ladyada for Adafruit Industries,
+ with contributions from the open source community.
+ BSD license, check license.txt for more information
+ All text above, and the splash screen below must be
+ included in any redistribution.
+ **************************************************************************/
+#include &lt;Arduino.h&gt;
+#include &lt;SPI.h&gt;
+#include &lt;Wire.h&gt;
+#include &lt;Adafruit_I2CDevice.h&gt; 
+#include &lt;Adafruit_GFX.h&gt;
+#include &lt;Adafruit_SSD1306.h&gt;
+
+
+ void testdrawline(void);      // Draw many lines
+
+ void testdrawrect(void);      // Draw rectangles (outlines)
+
+ void testfillrect(void);      // Draw rectangles (filled)
+
+  void testdrawcircle(void );    // Draw circles (outlines)
+
+  void testfillcircle(void );    // Draw circles (filled)
+
+  void testdrawroundrect(void ); // Draw rounded rectangles (outlines)
+
+  void testfillroundrect(void); // Draw rounded rectangles (filled)
+
+  void testdrawtriangle(void);  // Draw triangles (outlines)
+
+  void testfilltriangle(void);  // Draw triangles (filled)
+
+  void testdrawchar(void);      // Draw characters of the default font
+
+  void testdrawstyles(void);    // Draw 'stylized' characters
+
+  void testscrolltext(void);    // Draw scrolling text
+
+  void testdrawbitmap(void);    // Draw a small bitmap image
+
+  void testanimate(const uint8_t *bitmap, uint8_t w, uint8_t h);
+
+
+#define SCREEN_WIDTH 128 // OLED display width, in pixels
+#define SCREEN_HEIGHT 32 // OLED display height, in pixels
+
+// Declaration for an SSD1306 display connected to I2C (SDA, SCL pins)
+// The pins for I2C are defined by the Wire-library. 
+// On an arduino UNO:       A4(SDA), A5(SCL)
+// On an arduino MEGA 2560: 20(SDA), 21(SCL)
+// On an arduino LEONARDO:   2(SDA),  3(SCL), ...
+#define OLED_RESET     -1 // Reset pin # (or -1 if sharing Arduino reset pin)
+#define SCREEN_ADDRESS 0x3C ///&lt; See datasheet for Address; 0x3D for 128x64, 0x3C for 128x32
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &amp;Wire, OLED_RESET);
+
+#define NUMFLAKES     10 // Number of snowflakes in the animation example
+
+#define LOGO_HEIGHT   16
+#define LOGO_WIDTH    16
+static const unsigned char PROGMEM logo_bmp[] =
+{ B00000000, B11000000,
+  B00000001, B11000000,
+  B00000001, B11000000,
+  B00000011, B11100000,
+  B11110011, B11100000,
+  B11111110, B11111000,
+  B01111110, B11111111,
+  B00110011, B10011111,
+  B00011111, B11111100,
+  B00001101, B01110000,
+  B00011011, B10100000,
+  B00111111, B11100000,
+  B00111111, B11110000,
+  B01111100, B11110000,
+  B01110000, B01110000,
+  B00000000, B00110000 };
+
+void setup() {
+  Serial.begin(115200);
+
+  // SSD1306_SWITCHCAPVCC = generate display voltage from 3.3V internally
+  if(!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS)) {
+    Serial.println(F("SSD1306 allocation failed"));
+    for(;;); // Don't proceed, loop forever
+  }
+
+  // Show initial display buffer contents on the screen --
+  // the library initializes this with an Adafruit splash screen.
+  display.display();
+  delay(2000); // Pause for 2 seconds
+
+  // Clear the buffer
+  display.clearDisplay();
+
+  // Draw a single pixel in white
+  display.drawPixel(10, 10, SSD1306_WHITE);
+
+  // Show the display buffer on the screen. You MUST call display() after
+  // drawing commands to make them visible on screen!
+  display.display();
+  delay(2000);
+  // display.display() is NOT necessary after every single drawing command,
+  // unless that's what you want...rather, you can batch up a bunch of
+  // drawing operations and then update the screen all at once by calling
+  // display.display(). These examples demonstrate both approaches...
+
+  testdrawline();      // Draw many lines
+
+  testdrawrect();      // Draw rectangles (outlines)
+
+  testfillrect();      // Draw rectangles (filled)
+
+  testdrawcircle();    // Draw circles (outlines)
+
+  testfillcircle();    // Draw circles (filled)
+
+  testdrawroundrect(); // Draw rounded rectangles (outlines)
+
+  testfillroundrect(); // Draw rounded rectangles (filled)
+
+  testdrawtriangle();  // Draw triangles (outlines)
+
+  testfilltriangle();  // Draw triangles (filled)
+
+  testdrawchar();      // Draw characters of the default font
+
+  testdrawstyles();    // Draw 'stylized' characters
+
+  testscrolltext();    // Draw scrolling text
+
+  testdrawbitmap();    // Draw a small bitmap image
+
+  // Invert and restore display, pausing in-between
+  display.invertDisplay(true);
+  delay(1000);
+  display.invertDisplay(false);
+  delay(1000);
+
+  testanimate(logo_bmp, LOGO_WIDTH, LOGO_HEIGHT); // Animate bitmaps
+}
+
+void loop() {
+}
+
+void testdrawline() {
+  int16_t i;
+
+  display.clearDisplay(); // Clear display buffer
+
+  for(i=0; i&lt;display.width(); i+=4) {
+    display.drawLine(0, 0, i, display.height()-1, SSD1306_WHITE);
+    display.display(); // Update screen with each newly-drawn line
+    delay(1);
+  }
+  for(i=0; i&lt;display.height(); i+=4) {
+    display.drawLine(0, 0, display.width()-1, i, SSD1306_WHITE);
+    display.display();
+    delay(1);
+  }
+  delay(250);
+
+  display.clearDisplay();
+
+  for(i=0; i&lt;display.width(); i+=4) {
+    display.drawLine(0, display.height()-1, i, 0, SSD1306_WHITE);
+    display.display();
+    delay(1);
+  }
+  for(i=display.height()-1; i&gt;=0; i-=4) {
+    display.drawLine(0, display.height()-1, display.width()-1, i, SSD1306_WHITE);
+    display.display();
+    delay(1);
+  }
+  delay(250);
+
+  display.clearDisplay();
+
+  for(i=display.width()-1; i&gt;=0; i-=4) {
+    display.drawLine(display.width()-1, display.height()-1, i, 0, SSD1306_WHITE);
+    display.display();
+    delay(1);
+  }
+  for(i=display.height()-1; i&gt;=0; i-=4) {
+    display.drawLine(display.width()-1, display.height()-1, 0, i, SSD1306_WHITE);
+    display.display();
+    delay(1);
+  }
+  delay(250);
+
+  display.clearDisplay();
+
+  for(i=0; i&lt;display.height(); i+=4) {
+    display.drawLine(display.width()-1, 0, 0, i, SSD1306_WHITE);
+    display.display();
+    delay(1);
+  }
+  for(i=0; i&lt;display.width(); i+=4) {
+    display.drawLine(display.width()-1, 0, i, display.height()-1, SSD1306_WHITE);
+    display.display();
+    delay(1);
+  }
+
+  delay(2000); // Pause for 2 seconds
+}
+
+void testdrawrect(void) {
+  display.clearDisplay();
+
+  for(int16_t i=0; i&lt;display.height()/2; i+=2) {
+    display.drawRect(i, i, display.width()-2*i, display.height()-2*i, SSD1306_WHITE);
+    display.display(); // Update screen with each newly-drawn rectangle
+    delay(1);
+  }
+
+  delay(2000);
+}
+
+void testfillrect(void) {
+  display.clearDisplay();
+
+  for(int16_t i=0; i&lt;display.height()/2; i+=3) {
+    // The INVERSE color is used so rectangles alternate white/black
+    display.fillRect(i, i, display.width()-i*2, display.height()-i*2, SSD1306_INVERSE);
+    display.display(); // Update screen with each newly-drawn rectangle
+    delay(1);
+  }
+
+  delay(2000);
+}
+
+void testdrawcircle(void) {
+  display.clearDisplay();
+
+  for(int16_t i=0; i&lt;max(display.width(),display.height())/2; i+=2) {
+    display.drawCircle(display.width()/2, display.height()/2, i, SSD1306_WHITE);
+    display.display();
+    delay(1);
+  }
+
+  delay(2000);
+}
+
+void testfillcircle(void) {
+  display.clearDisplay();
+
+  for(int16_t i=max(display.width(),display.height())/2; i&gt;0; i-=3) {
+    // The INVERSE color is used so circles alternate white/black
+    display.fillCircle(display.width() / 2, display.height() / 2, i, SSD1306_INVERSE);
+    display.display(); // Update screen with each newly-drawn circle
+    delay(1);
+  }
+
+  delay(2000);
+}
+
+void testdrawroundrect(void) {
+  display.clearDisplay();
+
+  for(int16_t i=0; i&lt;display.height()/2-2; i+=2) {
+    display.drawRoundRect(i, i, display.width()-2*i, display.height()-2*i,
+      display.height()/4, SSD1306_WHITE);
+    display.display();
+    delay(1);
+  }
+
+  delay(2000);
+}
+
+void testfillroundrect(void) {
+  display.clearDisplay();
+
+  for(int16_t i=0; i&lt;display.height()/2-2; i+=2) {
+    // The INVERSE color is used so round-rects alternate white/black
+    display.fillRoundRect(i, i, display.width()-2*i, display.height()-2*i,
+      display.height()/4, SSD1306_INVERSE);
+    display.display();
+    delay(1);
+  }
+
+  delay(2000);
+}
+
+void testdrawtriangle(void) {
+  display.clearDisplay();
+
+  for(int16_t i=0; i&lt;max(display.width(),display.height())/2; i+=5) {
+    display.drawTriangle(
+      display.width()/2  , display.height()/2-i,
+      display.width()/2-i, display.height()/2+i,
+      display.width()/2+i, display.height()/2+i, SSD1306_WHITE);
+    display.display();
+    delay(1);
+  }
+
+  delay(2000);
+}
+
+void testfilltriangle(void) {
+  display.clearDisplay();
+
+  for(int16_t i=max(display.width(),display.height())/2; i&gt;0; i-=5) {
+    // The INVERSE color is used so triangles alternate white/black
+    display.fillTriangle(
+      display.width()/2  , display.height()/2-i,
+      display.width()/2-i, display.height()/2+i,
+      display.width()/2+i, display.height()/2+i, SSD1306_INVERSE);
+    display.display();
+    delay(1);
+  }
+
+  delay(2000);
+}
+
+void testdrawchar(void) {
+  display.clearDisplay();
+
+  display.setTextSize(1);      // Normal 1:1 pixel scale
+  display.setTextColor(SSD1306_WHITE); // Draw white text
+  display.setCursor(0, 0);     // Start at top-left corner
+  display.cp437(true);         // Use full 256 char 'Code Page 437' font
+
+  // Not all the characters will fit on the display. This is normal.
+  // Library will draw what it can and the rest will be clipped.
+  for(int16_t i=0; i&lt;256; i++) {
+    if(i == '\n') display.write(' ');
+    else          display.write(i);
+  }
+
+  display.display();
+  delay(2000);
+}
+
+void testdrawstyles(void) {
+  display.clearDisplay();
+
+  display.setTextSize(1);             // Normal 1:1 pixel scale
+  display.setTextColor(SSD1306_WHITE);        // Draw white text
+  display.setCursor(0,0);             // Start at top-left corner
+  display.println(F("Hello, world!"));
+
+  display.setTextColor(SSD1306_BLACK, SSD1306_WHITE); // Draw 'inverse' text
+  display.println(3.141592);
+
+  display.setTextSize(2);             // Draw 2X-scale text
+  display.setTextColor(SSD1306_WHITE);
+  display.print(F("0x")); display.println(0xDEADBEEF, HEX);
+
+  display.display();
+  delay(2000);
+}
+
+void testscrolltext(void) {
+  display.clearDisplay();
+
+  display.setTextSize(2); // Draw 2X-scale text
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(10, 0);
+  display.println(F("scroll"));
+  display.display();      // Show initial text
+  delay(100);
+
+  // Scroll in various directions, pausing in-between:
+  display.startscrollright(0x00, 0x0F);
+  delay(2000);
+  display.stopscroll();
+  delay(1000);
+  display.startscrollleft(0x00, 0x0F);
+  delay(2000);
+  display.stopscroll();
+  delay(1000);
+  display.startscrolldiagright(0x00, 0x07);
+  delay(2000);
+  display.startscrolldiagleft(0x00, 0x07);
+  delay(2000);
+  display.stopscroll();
+  delay(1000);
+}
+
+void testdrawbitmap(void) {
+  display.clearDisplay();
+
+  display.drawBitmap(
+    (display.width()  - LOGO_WIDTH ) / 2,
+    (display.height() - LOGO_HEIGHT) / 2,
+    logo_bmp, LOGO_WIDTH, LOGO_HEIGHT, 1);
+  display.display();
+  delay(1000);
+}
+
+#define XPOS   0 // Indexes into the 'icons' array in function below
+#define YPOS   1
+#define DELTAY 2
+
+void testanimate(const uint8_t *bitmap, uint8_t w, uint8_t h) {
+  int8_t f, icons[NUMFLAKES][3];
+
+  // Initialize 'snowflake' positions
+  for(f=0; f&lt; NUMFLAKES; f++) {
+    icons[f][XPOS]   = random(1 - LOGO_WIDTH, display.width());
+    icons[f][YPOS]   = -LOGO_HEIGHT;
+    icons[f][DELTAY] = random(1, 6);
+    Serial.print(F("x: "));
+    Serial.print(icons[f][XPOS], DEC);
+    Serial.print(F(" y: "));
+    Serial.print(icons[f][YPOS], DEC);
+    Serial.print(F(" dy: "));
+    Serial.println(icons[f][DELTAY], DEC);
+  }
+
+  for(;;) { // Loop forever...
+    display.clearDisplay(); // Clear the display buffer
+
+    // Draw each snowflake:
+    for(f=0; f&lt; NUMFLAKES; f++) {
+      display.drawBitmap(icons[f][XPOS], icons[f][YPOS], bitmap, w, h, SSD1306_WHITE);
+    }
+
+    display.display(); // Show the display buffer on the screen
+    delay(200);        // Pause for 1/10 second
+
+    // Then update coordinates of each flake...
+    for(f=0; f&lt; NUMFLAKES; f++) {
+      icons[f][YPOS] += icons[f][DELTAY];
+      // If snowflake is off the bottom of the screen...
+      if (icons[f][YPOS] &gt;= display.height()) {
+        // Reinitialize to a random position, just off the top
+        icons[f][XPOS]   = random(1 - LOGO_WIDTH, display.width());
+        icons[f][YPOS]   = -LOGO_HEIGHT;
+        icons[f][DELTAY] = random(1, 6);
+      }
+    }
+  }
+}
+
+</code></pre><hr>
+<h5 id="funcionamento">Funcionamento: </h5>
+<p>Este programa es una demo gráfica para pantallas OLED monocromáticas que utilizan el controlador SSD1306, conectadas por comunicación I2C.</p>
+<ol>
+<li>Inicializa el display OLED conectado mediante I2C a la dirección 0x3C.</li>
+<li>Muestra el logo de Adafruit durante 2 segundos.</li>
+<li>Ejecuta una serie de efectos visuales uno tras otro:</li>
+</ol>
+<ul>
+<li>Líneas animadas desde los bordes.</li>
+<li>Rectángulos (simples y rellenos).</li>
+<li>Círculos y círculos rellenos.</li>
+<li>Rectángulos redondeados.</li>
+<li>Triángulos.</li>
+<li>Muestra texto en diferentes tamaños, estilos y colores.</li>
+<li>Efecto de texto deslizante (scroll).</li>
+<li>Dibuja un pequeño bitmap centrado (logo).</li>
+</ul>
+<ol start="4">
+<li>Realiza una animación tipo “copos de nieve” en bucle infinito usando el logo como partícula.</li>
+</ol>
+<h5 id="salida-monitor-serie">Salida monitor serie: </h5>
+<p>Si el display no se conecta correctamente aparece el siguiente mensaje por pantalla:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>SSD1306 allocation failed
+</code></pre><p>Durante la animación imprime información sobre cada “copo” que cae por la pantalla:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>x: 23 y: -16 dy: 2
+x: 56 y: -16 dy: 3
+...
+</code></pre><h5 id="video-dimestración">Video dimestración: </h5>
+<p><a href="https://drive.google.com/file/d/1NKQJOf_JeiFLnGQJoev3SFA2sN5wBGqY/view?usp=share_link">https://drive.google.com/file/d/1NKQJOf_JeiFLnGQJoev3SFA2sN5wBGqY/view?usp=share_link</a></p>
+<h2><strong>Sensor Max3012 medidor de oxigeno en sangre  y frecuencia cardiaca</strong></h2>
+<p><img src="https://images-na.ssl-images-amazon.com/images/I/61Ig%2BO6utCL._AC_SL1000_.jpg" alt=""></p>
+<p>referencia  <a href="https://www.luisllamas.es/pulsimetro-y-oximetro-con-arduino-y-max30102/">https://www.luisllamas.es/pulsimetro-y-oximetro-con-arduino-y-max30102/</a></p>
+<h5 id="código-1">Código: </h5>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>/*
+  MAX30105 Breakout: Output all the raw Red/IR/Green readings
+  By: Nathan Seidle @ SparkFun Electronics
+  Date: October 2nd, 2016
+  https://github.com/sparkfun/MAX30105_Breakout
+
+  Outputs all Red/IR/Green values.
+
+  Hardware Connections (Breakoutboard to Arduino):
+  -5V = 5V (3.3V is allowed)
+  -GND = GND
+  -SDA = A4 (or SDA)
+  -SCL = A5 (or SCL)
+  -INT = Not connected
+
+  The MAX30105 Breakout can handle 5V or 3.3V I2C logic. We recommend powering the board with 5V
+  but it will also run at 3.3V.
+
+  This code is released under the [MIT License](http://opensource.org/licenses/MIT).
+*/
+#include &lt;Arduino.h&gt;
+#include &lt;Wire.h&gt;
+#include "MAX30105.h"
+#include &lt;Adafruit_I2CDevice.h&gt; 
+#include &lt;Adafruit_GFX.h&gt;
+#include &lt;Adafruit_SSD1306.h&gt;
+
+#include "spo2_algorithm.h"
+
+MAX30105 particleSensor;
+
+#define MAX_BRIGHTNESS 255
+
+#if defined(__AVR_ATmega328P__) || defined(__AVR_ATmega168__)
+//Arduino Uno doesn't have enough SRAM to store 100 samples of IR led data and red led data in 32-bit format
+//To solve this problem, 16-bit MSB of the sampled data will be truncated. Samples become 16-bit data.
+uint16_t irBuffer[100]; //infrared LED sensor data
+uint16_t redBuffer[100];  //red LED sensor data
+#else
+uint32_t irBuffer[100]; //infrared LED sensor data
+uint32_t redBuffer[100];  //red LED sensor data
+#endif
+
+int32_t bufferLength; //data length
+int32_t spo2; //SPO2 value
+int8_t validSPO2; //indicator to show if the SPO2 calculation is valid
+int32_t heartRate; //heart rate value
+int8_t validHeartRate; //indicator to show if the heart rate calculation is valid
+
+byte pulseLED = 11; //Must be on PWM pin
+byte readLED = 13; //Blinks with each data read
+
+void setup()
+{
+  Serial.begin(115200); // initialize serial communication at 115200 bits per second:
+
+  pinMode(pulseLED, OUTPUT);
+  pinMode(readLED, OUTPUT);
+
+  // Initialize sensor
+  if (!particleSensor.begin(Wire, I2C_SPEED_FAST)) //Use default I2C port, 400kHz speed
+  {
+    Serial.println(F("MAX30105 was not found. Please check wiring/power."));
+    while (1);
+  }
+
+  Serial.println(F("Attach sensor to finger with rubber band. Press any key to start conversion"));
+  while (Serial.available() == 0) ; //wait until user presses a key
+  Serial.read();
+
+  byte ledBrightness = 60; //Options: 0=Off to 255=50mA
+  byte sampleAverage = 4; //Options: 1, 2, 4, 8, 16, 32
+  byte ledMode = 2; //Options: 1 = Red only, 2 = Red + IR, 3 = Red + IR + Green
+  byte sampleRate = 100; //Options: 50, 100, 200, 400, 800, 1000, 1600, 3200
+  int pulseWidth = 411; //Options: 69, 118, 215, 411
+  int adcRange = 4096; //Options: 2048, 4096, 8192, 16384
+
+  particleSensor.setup(ledBrightness, sampleAverage, ledMode, sampleRate, pulseWidth, adcRange); //Configure sensor with these settings
+}
+
+void loop()
+{
+  bufferLength = 100; //buffer length of 100 stores 4 seconds of samples running at 25sps
+
+  //read the first 100 samples, and determine the signal range
+  for (byte i = 0 ; i &lt; bufferLength ; i++)
+  {
+    while (particleSensor.available() == false) //do we have new data?
+      particleSensor.check(); //Check the sensor for new data
+
+    redBuffer[i] = particleSensor.getRed();
+    irBuffer[i] = particleSensor.getIR();
+    particleSensor.nextSample(); //We're finished with this sample so move to next sample
+
+    Serial.print(F("red="));
+    Serial.print(redBuffer[i], DEC);
+    Serial.print(F(", ir="));
+    Serial.println(irBuffer[i], DEC);
+  }
+
+  //calculate heart rate and SpO2 after first 100 samples (first 4 seconds of samples)
+  maxim_heart_rate_and_oxygen_saturation(irBuffer, bufferLength, redBuffer, &amp;spo2, &amp;validSPO2, &amp;heartRate, &amp;validHeartRate);
+
+  //Continuously taking samples from MAX30102.  Heart rate and SpO2 are calculated every 1 second
+  while (1)
+  {
+    //dumping the first 25 sets of samples in the memory and shift the last 75 sets of samples to the top
+    for (byte i = 25; i &lt; 100; i++)
+    {
+      redBuffer[i - 25] = redBuffer[i];
+      irBuffer[i - 25] = irBuffer[i];
+    }
+
+    //take 25 sets of samples before calculating the heart rate.
+    for (byte i = 75; i &lt; 100; i++)
+    {
+      while (particleSensor.available() == false) //do we have new data?
+        particleSensor.check(); //Check the sensor for new data
+
+      digitalWrite(readLED, !digitalRead(readLED)); //Blink onboard LED with every data read
+
+      redBuffer[i] = particleSensor.getRed();
+      irBuffer[i] = particleSensor.getIR();
+      particleSensor.nextSample(); //We're finished with this sample so move to next sample
+
+      //send samples and calculation result to terminal program through UART
+      Serial.print(F("red="));
+      Serial.print(redBuffer[i], DEC);
+      Serial.print(F(", ir="));
+      Serial.print(irBuffer[i], DEC);
+
+      Serial.print(F(", HR="));
+      Serial.print(heartRate, DEC);
+
+      Serial.print(F(", HRvalid="));
+      Serial.print(validHeartRate, DEC);
+
+      Serial.print(F(", SPO2="));
+      Serial.print(spo2, DEC);
+
+      Serial.print(F(", SPO2Valid="));
+      Serial.println(validSPO2, DEC);
+    }
+
+    //After gathering 25 new samples recalculate HR and SP02
+    maxim_heart_rate_and_oxygen_saturation(irBuffer, bufferLength, redBuffer, &amp;spo2, &amp;validSPO2, &amp;heartRate, &amp;validHeartRate);
+  }
+}
+
+</code></pre><hr>
+<h5 id="funcionamento-1">Funcionamento: </h5>
+<p>Este programa utiliza el sensor MAX30105 para medir la frecuencia cardíaca (HR) y la saturación de oxígeno en sangre (SpO₂) a través de un dedo del usuario. La información se procesa y se muestra por el Monitor Serie.</p>
+<ol>
+<li>Inicialización
+<ul>
+<li>Inicia la comunicación I2C con el sensor MAX30105.</li>
+<li>Si no lo detecta, muestra un error y detiene el programa.</li>
+<li>Solicita al usuario que presione una tecla para empezar la medición.</li>
+</ul>
+</li>
+<li>Configuración del sensor (brillo, modo, velocidad de muestreo, ancho de pulso, rango)</li>
+<li>Adquisición de datos
+<ul>
+<li>El sensor toma 100 muestras de luz roja e infrarroja reflejada por el dedo.</li>
+<li>Estos datos se almacenan en redBuffer[] e irBuffer[].</li>
+</ul>
+</li>
+<li>Cálculo inicial de HR y SpO₂</li>
+</ol>
+<ul>
+<li>Se analiza la señal usando el algoritmo maxim_heart_rate_and_oxygen_saturation(), que estima:
+<ul>
+<li>HR (latidos por minuto)</li>
+<li>SpO₂ (porcentaje de saturación de oxígeno)</li>
+<li>Y determina si los valores calculados son válidos.</li>
+</ul>
+</li>
+</ul>
+<ol start="5">
+<li>Bucle de medición continua
+<ul>
+<li>En cada ciclo:</li>
+<li>Se conservan las últimas 75 muestras.</li>
+<li>Se toman 25 nuevas muestras (100 en total otra vez).</li>
+<li>Se recalcula HR y SpO₂.</li>
+</ul>
+</li>
+</ol>
+<h5 id="salida-monitor-serie-1">Salida monitor serie: </h5>
+<p>Cuando la lectura es correcta aparece el siguiente mensaje:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>red=53240, ir=65432, HR=75, HRvalid=1, SPO2=97, SPO2Valid=1
+</code></pre><p>Esta línea aparece una vez por muestra (25 veces por bucle) y representa una lectura del pulso óptico y los valores biométricos procesados.</p>
+<p>Cuando la lectura es incorrecta o no has puesto el dedo en el sensor:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>red=12000, ir=11000, HR=0, HRvalid=0, SPO2=0, SPO2Valid=0
+</code></pre><h5 id="video-demostració">Video demostració: </h5>
+<p><a href="https://drive.google.com/file/d/1v5Q1t-eiQ0XvFpqBY-A2n-BcqG9aTyB-/view?usp=share_link">https://drive.google.com/file/d/1v5Q1t-eiQ0XvFpqBY-A2n-BcqG9aTyB-/view?usp=share_link</a></p>
+<h2 id="ejercicio-de-subida-de-nota---muy-valorado">Ejercicio de subida de nota  ( muy valorado) </h2>
+<ul>
+<li>Parte  1.- Realizar utilizando el display y el sensor anterior un dispositivo que muestre en display la frecuencia cardiaca  y el contenido de oxigeno .</li>
+</ul>
+<pre data-role="codeBlock" data-info="c" class="language-c c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;Arduino.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;Wire.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"MAX30105.h"</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;LiquidCrystal_I2C.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"spo2_algorithm.h"</span></span>
+
+
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">SDA_PIN</span> <span class="token expression"><span class="token number">8</span></span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">SCL_PIN</span> <span class="token expression"><span class="token number">9</span></span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">LCD_ADDRESS</span> <span class="token expression"><span class="token number">0x27</span>  </span><span class="token comment">// Cambia a 0x3F si fuera necesario</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">LCD_COLUMNS</span> <span class="token expression"><span class="token number">16</span></span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">LCD_ROWS</span> <span class="token expression"><span class="token number">2</span></span></span>
+
+MAX30105 particleSensor<span class="token punctuation">;</span>
+LiquidCrystal_I2C <span class="token function">lcd</span><span class="token punctuation">(</span>LCD_ADDRESS<span class="token punctuation">,</span> LCD_COLUMNS<span class="token punctuation">,</span> LCD_ROWS<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">if</span> <span class="token expression"><span class="token function">defined</span><span class="token punctuation">(</span>__AVR_ATmega328P__<span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token function">defined</span><span class="token punctuation">(</span>__AVR_ATmega168__<span class="token punctuation">)</span></span></span>
+<span class="token class-name">uint16_t</span> irBuffer<span class="token punctuation">[</span><span class="token number">100</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token class-name">uint16_t</span> redBuffer<span class="token punctuation">[</span><span class="token number">100</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">else</span></span>
+<span class="token class-name">uint32_t</span> irBuffer<span class="token punctuation">[</span><span class="token number">100</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token class-name">uint32_t</span> redBuffer<span class="token punctuation">[</span><span class="token number">100</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">endif</span></span>
+
+<span class="token class-name">int32_t</span> bufferLength<span class="token punctuation">;</span>
+<span class="token class-name">int32_t</span> spo2<span class="token punctuation">;</span>
+<span class="token class-name">int8_t</span> validSPO2<span class="token punctuation">;</span>
+<span class="token class-name">int32_t</span> heartRate<span class="token punctuation">;</span>
+<span class="token class-name">int8_t</span> validHeartRate<span class="token punctuation">;</span>
+
+byte pulseLED <span class="token operator">=</span> <span class="token number">11</span><span class="token punctuation">;</span>
+byte readLED <span class="token operator">=</span> <span class="token number">13</span><span class="token punctuation">;</span>
+
+<span class="token keyword keyword-void">void</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  Serial<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token number">115200</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">pinMode</span><span class="token punctuation">(</span>pulseLED<span class="token punctuation">,</span> OUTPUT<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">pinMode</span><span class="token punctuation">(</span>readLED<span class="token punctuation">,</span> OUTPUT<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// Inicializar I2C con pines personalizados</span>
+  Wire<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span>SDA_PIN<span class="token punctuation">,</span> SCL_PIN<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// Inicializar LCD</span>
+  lcd<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  lcd<span class="token punctuation">.</span><span class="token function">backlight</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  lcd<span class="token punctuation">.</span><span class="token function">setCursor</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  lcd<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Iniciando LCD..."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// Inicializar sensor</span>
+  <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>particleSensor<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span>Wire<span class="token punctuation">,</span> I2C_SPEED_FAST<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    lcd<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    lcd<span class="token punctuation">.</span><span class="token function">setCursor</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    lcd<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Sensor MAX30105"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    lcd<span class="token punctuation">.</span><span class="token function">setCursor</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    lcd<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"no detectado!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword keyword-while">while</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  lcd<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  lcd<span class="token punctuation">.</span><span class="token function">setCursor</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  lcd<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Coloca el dedo"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  byte ledBrightness <span class="token operator">=</span> <span class="token number">60</span><span class="token punctuation">;</span>
+  byte sampleAverage <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+  byte ledMode <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+  byte sampleRate <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+  <span class="token keyword keyword-int">int</span> pulseWidth <span class="token operator">=</span> <span class="token number">411</span><span class="token punctuation">;</span>
+  <span class="token keyword keyword-int">int</span> adcRange <span class="token operator">=</span> <span class="token number">4096</span><span class="token punctuation">;</span>
+
+  particleSensor<span class="token punctuation">.</span><span class="token function">setup</span><span class="token punctuation">(</span>ledBrightness<span class="token punctuation">,</span> sampleAverage<span class="token punctuation">,</span> ledMode<span class="token punctuation">,</span> sampleRate<span class="token punctuation">,</span> pulseWidth<span class="token punctuation">,</span> adcRange<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// Esperar que el usuario pulse una tecla en Serial</span>
+  Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Presiona una tecla para empezar"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword keyword-while">while</span> <span class="token punctuation">(</span>Serial<span class="token punctuation">.</span><span class="token function">available</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  Serial<span class="token punctuation">.</span><span class="token function">read</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword keyword-void">void</span> <span class="token function">loop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  bufferLength <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+
+  <span class="token keyword keyword-for">for</span> <span class="token punctuation">(</span>byte i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> bufferLength<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-while">while</span> <span class="token punctuation">(</span><span class="token operator">!</span>particleSensor<span class="token punctuation">.</span><span class="token function">available</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+      particleSensor<span class="token punctuation">.</span><span class="token function">check</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    redBuffer<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> particleSensor<span class="token punctuation">.</span><span class="token function">getRed</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    irBuffer<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> particleSensor<span class="token punctuation">.</span><span class="token function">getIR</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    particleSensor<span class="token punctuation">.</span><span class="token function">nextSample</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">maxim_heart_rate_and_oxygen_saturation</span><span class="token punctuation">(</span>irBuffer<span class="token punctuation">,</span> bufferLength<span class="token punctuation">,</span> redBuffer<span class="token punctuation">,</span>
+                                         <span class="token operator">&amp;</span>spo2<span class="token punctuation">,</span> <span class="token operator">&amp;</span>validSPO2<span class="token punctuation">,</span> <span class="token operator">&amp;</span>heartRate<span class="token punctuation">,</span> <span class="token operator">&amp;</span>validHeartRate<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword keyword-while">while</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-for">for</span> <span class="token punctuation">(</span>byte i <span class="token operator">=</span> <span class="token number">25</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">100</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      redBuffer<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">25</span><span class="token punctuation">]</span> <span class="token operator">=</span> redBuffer<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+      irBuffer<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">25</span><span class="token punctuation">]</span> <span class="token operator">=</span> irBuffer<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword keyword-for">for</span> <span class="token punctuation">(</span>byte i <span class="token operator">=</span> <span class="token number">75</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">100</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword keyword-while">while</span> <span class="token punctuation">(</span><span class="token operator">!</span>particleSensor<span class="token punctuation">.</span><span class="token function">available</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        particleSensor<span class="token punctuation">.</span><span class="token function">check</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token function">digitalWrite</span><span class="token punctuation">(</span>readLED<span class="token punctuation">,</span> <span class="token operator">!</span><span class="token function">digitalRead</span><span class="token punctuation">(</span>readLED<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      redBuffer<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> particleSensor<span class="token punctuation">.</span><span class="token function">getRed</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      irBuffer<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> particleSensor<span class="token punctuation">.</span><span class="token function">getIR</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      particleSensor<span class="token punctuation">.</span><span class="token function">nextSample</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token comment">// Mostrar en la pantalla LCD</span>
+      lcd<span class="token punctuation">.</span><span class="token function">setCursor</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      lcd<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"HR:"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>validHeartRate<span class="token punctuation">)</span>
+        lcd<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span>heartRate<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword keyword-else">else</span>
+        lcd<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"--"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      
+      lcd<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">" bpm"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      lcd<span class="token punctuation">.</span><span class="token function">setCursor</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      lcd<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"SpO2:"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>validSPO2<span class="token punctuation">)</span>
+        lcd<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span>spo2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword keyword-else">else</span>
+        lcd<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"--"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      lcd<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">" %  "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token comment">// También puedes mantener Serial para debug si lo deseas</span>
+      Serial<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"HR="</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      Serial<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span>heartRate<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      Serial<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">", SPO2="</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      Serial<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span>spo2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">maxim_heart_rate_and_oxygen_saturation</span><span class="token punctuation">(</span>irBuffer<span class="token punctuation">,</span> bufferLength<span class="token punctuation">,</span>
+                                           redBuffer<span class="token punctuation">,</span> <span class="token operator">&amp;</span>spo2<span class="token punctuation">,</span> <span class="token operator">&amp;</span>validSPO2<span class="token punctuation">,</span> <span class="token operator">&amp;</span>heartRate<span class="token punctuation">,</span> <span class="token operator">&amp;</span>validHeartRate<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><p>librerias necesarias:</p>
+<pre data-role="codeBlock" data-info="c" class="language-c c"><code>lib_deps <span class="token operator">=</span> 
+	marcoschwartz<span class="token operator">/</span>LiquidCrystal_I2C@<span class="token operator">^</span><span class="token number">1.1</span><span class="token number">.4</span>
+	devxplained<span class="token operator">/</span>MAX3010x Sensor Library@<span class="token operator">^</span><span class="token number">1.0</span><span class="token number">.5</span>
+	adafruit<span class="token operator">/</span>Adafruit GFX Library@<span class="token operator">^</span><span class="token number">1.12</span><span class="token number">.0</span>
+	sparkfun<span class="token operator">/</span>SparkFun MAX3010x Pulse and Proximity Sensor Library@<span class="token operator">^</span><span class="token number">1.1</span><span class="token number">.2</span>
+</code></pre><h5 id="funcionamiento">Funcionamiento: </h5>
+<ol>
+<li>Inicialización:</li>
+</ol>
+<ul>
+<li>Configura el sensor MAX30105 y la pantalla LCD.</li>
+<li>Espera que el usuario presione una tecla por monitor serie para empezar.</li>
+</ul>
+<ol start="2">
+<li>Lectura de datos:</li>
+</ol>
+<ul>
+<li>El sensor recoge 100 muestras de luz roja e infrarroja.</li>
+<li>Se calcula el HR (latidos por minuto) y SpO₂ (% oxígeno).</li>
+<li>Se actualizan continuamente cada segundo.</li>
+</ul>
+<ol start="3">
+<li>Salida en LCD:</li>
+</ol>
+<ul>
+<li>Línea 1: HR: 75 bpm (por ejemplo)</li>
+<li>Línea 2: SpO2: 98 %</li>
+</ul>
+<ol start="4">
+<li>LED (pin 13): Parpadea con cada nueva lectura del sensor.</li>
+</ol>
+<h5 id="salida-monitor-serie-2">Salida monitor serie: </h5>
+<p>El monitor serie muestra lo siguiente con cada nueva muestra:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>HR=76, SPO2=98
+</code></pre><p>Si el sensor no puede calcular correctamente, se muestra:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>LCD: HR: -- bpm, SpO2: -- %
+Serial: HR=0, SPO2=0
+</code></pre><h5 id="video-demostració-1">Video demostració: </h5>
+<p><a href="https://drive.google.com/file/d/1POCz8aZEXP_RDvUqVMpF1vBY-mNZoNQL/view?usp=share_link">https://drive.google.com/file/d/1POCz8aZEXP_RDvUqVMpF1vBY-mNZoNQL/view?usp=share_link</a></p>
+<ul>
+<li>Parte  2.- Generar una pagina web donde se pueda consultar dicha frecuencia y el contenido de oxigeno</li>
+</ul>
+<p>Este apartado no he podido hacerlo, ya que mi router no permite conectar dispositivos como el ESP32-S3.</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

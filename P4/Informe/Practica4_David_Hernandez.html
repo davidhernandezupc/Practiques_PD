@@ -1,0 +1,410 @@
+<!DOCTYPE html><html><head>
+      <title>Practica4_David_Hernandez</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/davidhm/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.18/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="practica-4---sistemas-operativos-en-tiempo-real">PRACTICA 4 :  SISTEMAS OPERATIVOS EN TIEMPO REAL </h1>
+<h3 id="material">MATERIAL </h3>
+<p>Para esta practica necesitaremos el microcontrolador ESP32, una luz led, protoboard y cables (opcional)</p>
+  <div style="display: flex; justify-content: center; gap: 10px;">
+      <img src="https://ae04.alicdn.com/kf/S8dee2f4cafc344e1b57ebc21ad5c11a4P.jpg" alt="ESP32" width="150">
+      <img src="https://cdn.bodanius.com/media/1/0d8100207_breadboard-wit-400-punten_x.png" alt="Protoaboard" width="150">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_878530-MLA75569986696_042024-O.webp" alt="led" width="150">
+      <img src="https://www.topcable.com/blog-electric-cable/wp-content/uploads/2014/11/topflex-h05vk-h07vk-colores.jpg" alt="Cables" width="150">
+  </div>
+<h3 id="objetivo-y-funcionalidad-de-la-practica">OBJETIVO Y FUNCIONALIDAD DE LA PRACTICA </h3>
+<p>El objetivo de la practica es comprender el funcionamiento de un sistema operativo en tiempo real.</p>
+<p>Para lo cual realizaremos una practica  donde  generaremos varias tareas  y veremos como<br>
+se ejecutan dividiendo el tiempo de uso de la cpu.</p>
+<h2 id="ejercicio-practico-1">Ejercicio Practico 1 </h2>
+<p>Programar el siguiente codigo</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>void setup()
+{
+Serial.begin(112500);
+/* we create a new task here */
+xTaskCreate(
+anotherTask, /* Task function. */
+"another Task", /* name of task. */
+10000, /* Stack size of task */
+NULL, /* parameter of the task */
+1, /* priority of the task */
+NULL); /* Task handle to keep track of created task */
+}
+ 
+/* the forever loop() function is invoked by Arduino ESP32 loopTask */
+void loop()
+{
+Serial.println("this is ESP32 Task");
+delay(1000);
+}
+ 
+/* this function will be invoked when additionalTask was created */
+void anotherTask( void * parameter )
+{
+/* loop forever */
+for(;;)
+{
+Serial.println("this is another Task");
+delay(1000);
+}
+/* delete a task when finish,
+this will never happen because this is infinity loop */
+vTaskDelete( NULL );
+}
+
+</code></pre><ol>
+<li><strong>Descibir la salida por el puerto serie</strong><br>
+Cuando envias el código a la ESP32 aparece en el monitor serie el siguiente código:</li>
+</ol>
+<blockquote>
+<blockquote>
+<p>this is ESP32 Task<br>
+this is another Task<br>
+this is ESP32 Task<br>
+this is another Task<br>
+this is ESP32 Task<br>
+this is another Task<br>
+...</p>
+</blockquote>
+</blockquote>
+<p>Estos mensajes aparecen intercalados porque las dos tareas se ejecutan en paralelo. Las funciones que se encargan de enviar estos mensajes son:</p>
+<ul>
+<li><em>loop()</em>: Imprime "this is ESP32 Task" cada 1 segundo.</li>
+<li><em>anotherTask()</em>: Imprime "this is another Task" cada 1 segundo en un hilo independiente.</li>
+</ul>
+<ol start="2">
+<li><strong>Explicar el funcionamiento</strong></li>
+</ol>
+<ul>
+<li>El ESP32 inicia la tarea principal (loop()), que imprime "this is ESP32 Task" cada 1 segundo.</li>
+<li>La función anotherTask() se ejecuta en otro núcleo o en la misma CPU con FreeRTOS, imprimiendo "this is another Task" cada 1 segundo.</li>
+<li>Ambas tareas se ejecutan en paralelo, compartiendo tiempo de CPU gracias a FreeRTOS.</li>
+</ul>
+<h2 id="ejercicio-practico-2">Ejercicio Practico 2 </h2>
+<ol>
+<li><strong>Realizar un programa que utilice dos tareas  una enciende un led y otra  lo apaga dichas tareas deben estar sincronizadas sugerencias utilizar un semaforo</strong></li>
+</ol>
+<p>Este programa en ESP32 implementa multitarea con FreeRTOS para alternar el encendido y apagado de un LED de manera sincronizada.<br>
+Se utilizan dos tareas concurrentes (ledON y ledOFF), y su ejecución se sincroniza mediante semáforos binarios.</p>
+<p>El ESP32 ejecuta dos tareas en paralelo:</p>
+<ul>
+<li>Primero, ledON se ejecuta, enciende el LED y habilita ledOFF.</li>
+<li>Luego, ledOFF toma el control, apaga el LED y habilita ledON.</li>
+<li>Este ciclo se repite indefinidamente, alternando el encendido y apagado del LED cada 1 segundo.</li>
+</ul>
+<p><strong>Código comentado:</strong></p>
+<pre data-role="codeBlock" data-info="c" class="language-c c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;Arduino.h&gt;</span></span>
+
+<span class="token comment">// Declaración de funciones para tareas FreeRTOS</span>
+<span class="token keyword keyword-void">void</span> <span class="token function">ledON</span><span class="token punctuation">(</span><span class="token keyword keyword-void">void</span> <span class="token operator">*</span>pvParameters<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-void">void</span> <span class="token function">ledOFF</span><span class="token punctuation">(</span><span class="token keyword keyword-void">void</span> <span class="token operator">*</span>pvParameters<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword keyword-int">int</span> LED <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>  <span class="token comment">// Pin del LED</span>
+
+<span class="token comment">// Crear dos semáforos binarios</span>
+SemaphoreHandle_t semaforo_ON<span class="token punctuation">;</span>
+SemaphoreHandle_t semaforo_OFF<span class="token punctuation">;</span>
+
+<span class="token keyword keyword-void">void</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    Serial<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token number">115200</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">pinMode</span><span class="token punctuation">(</span>LED<span class="token punctuation">,</span> OUTPUT<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// Crear los semáforos</span>
+    semaforo_ON <span class="token operator">=</span> <span class="token function">xSemaphoreCreateBinary</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    semaforo_OFF <span class="token operator">=</span> <span class="token function">xSemaphoreCreateBinary</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>semaforo_ON <span class="token operator">!=</span> <span class="token constant">NULL</span> <span class="token operator">&amp;&amp;</span> semaforo_OFF <span class="token operator">!=</span> <span class="token constant">NULL</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">xSemaphoreGive</span><span class="token punctuation">(</span>semaforo_ON<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// Comenzamos con `ledON` habilitado</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// Crear tareas con la misma prioridad para alternar perfectamente</span>
+    <span class="token function">xTaskCreate</span><span class="token punctuation">(</span>ledON<span class="token punctuation">,</span> <span class="token string">"LED ON"</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">xTaskCreate</span><span class="token punctuation">(</span>ledOFF<span class="token punctuation">,</span> <span class="token string">"LED OFF"</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword keyword-void">void</span> <span class="token function">loop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">vTaskDelete</span><span class="token punctuation">(</span><span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// No se usa loop() en FreeRTOS</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Tarea para encender el LED</span>
+<span class="token keyword keyword-void">void</span> <span class="token function">ledON</span><span class="token punctuation">(</span><span class="token keyword keyword-void">void</span> <span class="token operator">*</span>pvParameters<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-for">for</span> <span class="token punctuation">(</span><span class="token punctuation">;</span><span class="token punctuation">;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span><span class="token function">xSemaphoreTake</span><span class="token punctuation">(</span>semaforo_ON<span class="token punctuation">,</span> portMAX_DELAY<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token comment">// Espera a su turno</span>
+            Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Ejecutando tarea: LED ON"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token function">digitalWrite</span><span class="token punctuation">(</span>LED<span class="token punctuation">,</span> HIGH<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token function">vTaskDelay</span><span class="token punctuation">(</span><span class="token function">pdMS_TO_TICKS</span><span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// LED encendido por 1 seg</span>
+            <span class="token function">xSemaphoreGive</span><span class="token punctuation">(</span>semaforo_OFF<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// Habilita la tarea `ledOFF`</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Tarea para apagar el LED</span>
+<span class="token keyword keyword-void">void</span> <span class="token function">ledOFF</span><span class="token punctuation">(</span><span class="token keyword keyword-void">void</span> <span class="token operator">*</span>pvParameters<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-for">for</span> <span class="token punctuation">(</span><span class="token punctuation">;</span><span class="token punctuation">;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span><span class="token function">xSemaphoreTake</span><span class="token punctuation">(</span>semaforo_OFF<span class="token punctuation">,</span> portMAX_DELAY<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token comment">// Espera su turno</span>
+            Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Ejecutando tarea: LED OFF"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token function">digitalWrite</span><span class="token punctuation">(</span>LED<span class="token punctuation">,</span> LOW<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token function">vTaskDelay</span><span class="token punctuation">(</span><span class="token function">pdMS_TO_TICKS</span><span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// LED apagado por 1 seg</span>
+            <span class="token function">xSemaphoreGive</span><span class="token punctuation">(</span>semaforo_ON<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// Habilita la tarea `ledON`</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><p>Las variables <em>semaforo_ON</em> y <em>semaforo_OFF</em> garantizan que solo una tarea acceda al LED a la vez.<br>
+La sincronización perfecta entre las tareas se debe al uso correcto de los semáforos.</p>
+<p>Cada tarea cede el turno a la otra al finalizar, evitando ejecución desordenada.</p>
+<p><strong>Salida del monitor serie:</strong></p>
+<blockquote>
+<p>Ejecutando tarea: LED ON<br>
+Ejecutando tarea: LED OFF<br>
+Ejecutando tarea: LED ON<br>
+Ejecutando tarea: LED OFF<br>
+...</p>
+</blockquote>
+<p>Muestra en que momento ejecuta cada tarea y el estado del LED correspondiente.</p>
+<h2 id="ejercicios-opcionales">Ejercicios opcionales </h2>
+<h4 id="reloj">Reloj </h4>
+<h6 id="hardware-necesario">Hardware necesario </h6>
+<ul>
+<li>ESP32 (cualquier modelo compatible con Arduino)</li>
+<li>2 LEDs (con sus resistencias correspondientes)</li>
+<li>2 Pulsadores Cables de conexión Protoboard</li>
+</ul>
+<h6 id="código-comentado">Código comentado </h6>
+<pre data-role="codeBlock" data-info="c" class="language-c c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;Arduino.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"freertos/FreeRTOS.h"</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"freertos/task.h"</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"freertos/queue.h"</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"freertos/semphr.h"</span></span>
+
+<span class="token comment">// --------------------- DEFINICIÓN DE PINES -------------------------</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">LED_SEGUNDOS</span> <span class="token expression"><span class="token number">2</span>       </span><span class="token comment">// LED que parpadea cada segundo (tipo reloj)</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">LED_MODO</span> <span class="token expression"><span class="token number">4</span>           </span><span class="token comment">// LED que se enciende cuando estamos en modo ajuste</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">BTN_MODO</span> <span class="token expression"><span class="token number">16</span>          </span><span class="token comment">// Botón para cambiar el modo (normal, ajustar horas, ajustar minutos)</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">BTN_INCREMENTO</span> <span class="token expression"><span class="token number">17</span>    </span><span class="token comment">// Botón para incrementar horas o minutos dependiendo del modo</span></span>
+
+<span class="token comment">// --------------------- VARIABLES DEL RELOJ -------------------------</span>
+<span class="token keyword keyword-volatile">volatile</span> <span class="token keyword keyword-int">int</span> horas <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-volatile">volatile</span> <span class="token keyword keyword-int">int</span> minutos <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-volatile">volatile</span> <span class="token keyword keyword-int">int</span> segundos <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-volatile">volatile</span> <span class="token keyword keyword-int">int</span> modo <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment">// 0 = normal, 1 = ajustar horas, 2 = ajustar minutos</span>
+
+<span class="token comment">// --------------------- RTOS: COLA Y SEMÁFORO -------------------------</span>
+QueueHandle_t botonQueue<span class="token punctuation">;</span>         <span class="token comment">// Cola para eventos de botones (usada por interrupciones)</span>
+SemaphoreHandle_t relojMutex<span class="token punctuation">;</span>     <span class="token comment">// Mutex para proteger acceso concurrente al reloj</span>
+
+<span class="token comment">// --------------------- ESTRUCTURA PARA EVENTOS DE BOTONES -------------------------</span>
+<span class="token keyword keyword-typedef">typedef</span> <span class="token keyword keyword-struct">struct</span> <span class="token punctuation">{</span>
+  <span class="token class-name">uint8_t</span> boton<span class="token punctuation">;</span>       <span class="token comment">// Qué botón fue presionado</span>
+  <span class="token class-name">uint32_t</span> tiempo<span class="token punctuation">;</span>     <span class="token comment">// Tiempo de la pulsación (para control de rebote)</span>
+<span class="token punctuation">}</span> EventoBoton<span class="token punctuation">;</span>
+
+<span class="token comment">// --------------------- PROTOTIPOS DE TAREAS -------------------------</span>
+<span class="token keyword keyword-void">void</span> <span class="token function">TareaReloj</span><span class="token punctuation">(</span><span class="token keyword keyword-void">void</span> <span class="token operator">*</span>pvParameters<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-void">void</span> <span class="token function">TareaLecturaBotones</span><span class="token punctuation">(</span><span class="token keyword keyword-void">void</span> <span class="token operator">*</span>pvParameters<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-void">void</span> <span class="token function">TareaActualizacionDisplay</span><span class="token punctuation">(</span><span class="token keyword keyword-void">void</span> <span class="token operator">*</span>pvParameters<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-void">void</span> <span class="token function">TareaControlLEDs</span><span class="token punctuation">(</span><span class="token keyword keyword-void">void</span> <span class="token operator">*</span>pvParameters<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// --------------------- ISR: GESTIÓN DE INTERRUPCIÓN DE BOTÓN -------------------------</span>
+<span class="token keyword keyword-void">void</span> IRAM_ATTR <span class="token function">ISR_Boton</span><span class="token punctuation">(</span><span class="token keyword keyword-void">void</span> <span class="token operator">*</span>arg<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token class-name">uint8_t</span> numeroPulsador <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">uint32_t</span><span class="token punctuation">)</span>arg<span class="token punctuation">;</span>
+
+  EventoBoton evento<span class="token punctuation">;</span>
+  evento<span class="token punctuation">.</span>boton <span class="token operator">=</span> numeroPulsador<span class="token punctuation">;</span>
+  evento<span class="token punctuation">.</span>tiempo <span class="token operator">=</span> <span class="token function">xTaskGetTickCountFromISR</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Tiempo del evento (ticks de RTOS)</span>
+
+  <span class="token comment">// Enviamos el evento a la cola desde interrupción</span>
+  <span class="token function">xQueueSendFromISR</span><span class="token punctuation">(</span>botonQueue<span class="token punctuation">,</span> <span class="token operator">&amp;</span>evento<span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword keyword-void">void</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  Serial<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token number">115200</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Inicializando Reloj Digital con RTOS"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// Configuración de pines</span>
+  <span class="token function">pinMode</span><span class="token punctuation">(</span>LED_SEGUNDOS<span class="token punctuation">,</span> OUTPUT<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">pinMode</span><span class="token punctuation">(</span>LED_MODO<span class="token punctuation">,</span> OUTPUT<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">pinMode</span><span class="token punctuation">(</span>BTN_MODO<span class="token punctuation">,</span> INPUT_PULLUP<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">pinMode</span><span class="token punctuation">(</span>BTN_INCREMENTO<span class="token punctuation">,</span> INPUT_PULLUP<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// Crear recursos RTOS</span>
+  botonQueue <span class="token operator">=</span> <span class="token function">xQueueCreate</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token keyword keyword-sizeof">sizeof</span><span class="token punctuation">(</span>EventoBoton<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>         <span class="token comment">// Cola para máximo 10 eventos de botón</span>
+  relojMutex <span class="token operator">=</span> <span class="token function">xSemaphoreCreateMutex</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                       <span class="token comment">// Mutex para sincronizar acceso al reloj</span>
+
+  <span class="token comment">// Configurar interrupciones de botones</span>
+  <span class="token function">attachInterruptArg</span><span class="token punctuation">(</span>BTN_MODO<span class="token punctuation">,</span> ISR_Boton<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token keyword keyword-void">void</span><span class="token operator">*</span><span class="token punctuation">)</span>BTN_MODO<span class="token punctuation">,</span> FALLING<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">attachInterruptArg</span><span class="token punctuation">(</span>BTN_INCREMENTO<span class="token punctuation">,</span> ISR_Boton<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token keyword keyword-void">void</span><span class="token operator">*</span><span class="token punctuation">)</span>BTN_INCREMENTO<span class="token punctuation">,</span> FALLING<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// Crear tareas FreeRTOS</span>
+  <span class="token function">xTaskCreate</span><span class="token punctuation">(</span>TareaReloj<span class="token punctuation">,</span> <span class="token string">"RelojTask"</span><span class="token punctuation">,</span> <span class="token number">2048</span><span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">xTaskCreate</span><span class="token punctuation">(</span>TareaLecturaBotones<span class="token punctuation">,</span> <span class="token string">"BotonesTask"</span><span class="token punctuation">,</span> <span class="token number">2048</span><span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// Prioridad mayor</span>
+  <span class="token function">xTaskCreate</span><span class="token punctuation">(</span>TareaActualizacionDisplay<span class="token punctuation">,</span> <span class="token string">"DisplayTask"</span><span class="token punctuation">,</span> <span class="token number">2048</span><span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">xTaskCreate</span><span class="token punctuation">(</span>TareaControlLEDs<span class="token punctuation">,</span> <span class="token string">"LEDsTask"</span><span class="token punctuation">,</span> <span class="token number">1024</span><span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword keyword-void">void</span> <span class="token function">loop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// El loop no se usa porque todo lo maneja el sistema de tareas</span>
+  <span class="token function">vTaskDelay</span><span class="token punctuation">(</span>portMAX_DELAY<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// --------------------- TAREA: ACTUALIZA EL TIEMPO CADA SEGUNDO -------------------------</span>
+<span class="token keyword keyword-void">void</span> <span class="token function">TareaReloj</span><span class="token punctuation">(</span><span class="token keyword keyword-void">void</span> <span class="token operator">*</span>pvParameters<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  TickType_t xLastWakeTime <span class="token operator">=</span> <span class="token function">xTaskGetTickCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword keyword-const">const</span> TickType_t xPeriod <span class="token operator">=</span> <span class="token function">pdMS_TO_TICKS</span><span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Cada 1000 ms (1 segundo)</span>
+
+  <span class="token keyword keyword-for">for</span> <span class="token punctuation">(</span><span class="token punctuation">;</span><span class="token punctuation">;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">vTaskDelayUntil</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>xLastWakeTime<span class="token punctuation">,</span> xPeriod<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Espera exacta cada segundo</span>
+
+    <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span><span class="token function">xSemaphoreTake</span><span class="token punctuation">(</span>relojMutex<span class="token punctuation">,</span> portMAX_DELAY<span class="token punctuation">)</span> <span class="token operator">==</span> pdTRUE<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>modo <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// Solo avanza el reloj en modo normal</span>
+        segundos<span class="token operator">++</span><span class="token punctuation">;</span>
+        <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>segundos <span class="token operator">&gt;=</span> <span class="token number">60</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          segundos <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+          minutos<span class="token operator">++</span><span class="token punctuation">;</span>
+          <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>minutos <span class="token operator">&gt;=</span> <span class="token number">60</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            minutos <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            horas<span class="token operator">++</span><span class="token punctuation">;</span>
+            <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>horas <span class="token operator">&gt;=</span> <span class="token number">24</span><span class="token punctuation">)</span> horas <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+      <span class="token function">xSemaphoreGive</span><span class="token punctuation">(</span>relojMutex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// --------------------- TAREA: GESTIÓN DE BOTONES -------------------------</span>
+<span class="token keyword keyword-void">void</span> <span class="token function">TareaLecturaBotones</span><span class="token punctuation">(</span><span class="token keyword keyword-void">void</span> <span class="token operator">*</span>pvParameters<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  EventoBoton evento<span class="token punctuation">;</span>
+  <span class="token class-name">uint32_t</span> ultimoTiempoBoton <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token keyword keyword-const">const</span> <span class="token class-name">uint32_t</span> debounceTime <span class="token operator">=</span> <span class="token function">pdMS_TO_TICKS</span><span class="token punctuation">(</span><span class="token number">300</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 300ms anti-rebote</span>
+
+  <span class="token keyword keyword-for">for</span> <span class="token punctuation">(</span><span class="token punctuation">;</span><span class="token punctuation">;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span><span class="token function">xQueueReceive</span><span class="token punctuation">(</span>botonQueue<span class="token punctuation">,</span> <span class="token operator">&amp;</span>evento<span class="token punctuation">,</span> portMAX_DELAY<span class="token punctuation">)</span> <span class="token operator">==</span> pdPASS<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>evento<span class="token punctuation">.</span>tiempo <span class="token operator">-</span> ultimoTiempoBoton<span class="token punctuation">)</span> <span class="token operator">&gt;=</span> debounceTime<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span><span class="token function">xSemaphoreTake</span><span class="token punctuation">(</span>relojMutex<span class="token punctuation">,</span> portMAX_DELAY<span class="token punctuation">)</span> <span class="token operator">==</span> pdTRUE<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>evento<span class="token punctuation">.</span>boton <span class="token operator">==</span> BTN_MODO<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            modo <span class="token operator">=</span> <span class="token punctuation">(</span>modo <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">%</span> <span class="token number">3</span><span class="token punctuation">;</span> <span class="token comment">// Rota entre 0, 1, 2</span>
+            Serial<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Cambio de modo: %d\n"</span><span class="token punctuation">,</span> modo<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span> <span class="token keyword keyword-else">else</span> <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>evento<span class="token punctuation">.</span>boton <span class="token operator">==</span> BTN_INCREMENTO<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>modo <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              horas <span class="token operator">=</span> <span class="token punctuation">(</span>horas <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">%</span> <span class="token number">24</span><span class="token punctuation">;</span>
+              Serial<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Horas ajustadas a: %d\n"</span><span class="token punctuation">,</span> horas<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span> <span class="token keyword keyword-else">else</span> <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>modo <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              minutos <span class="token operator">=</span> <span class="token punctuation">(</span>minutos <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">%</span> <span class="token number">60</span><span class="token punctuation">;</span>
+              segundos <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment">// Reiniciar segundos al cambiar minutos</span>
+              Serial<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Minutos ajustados a: %d\n"</span><span class="token punctuation">,</span> minutos<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span>
+          <span class="token function">xSemaphoreGive</span><span class="token punctuation">(</span>relojMutex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        ultimoTiempoBoton <span class="token operator">=</span> evento<span class="token punctuation">.</span>tiempo<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// --------------------- TAREA: ACTUALIZA LA HORA POR PUERTO SERIE -------------------------</span>
+<span class="token keyword keyword-void">void</span> <span class="token function">TareaActualizacionDisplay</span><span class="token punctuation">(</span><span class="token keyword keyword-void">void</span> <span class="token operator">*</span>pvParameters<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword keyword-int">int</span> horasAnterior <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> minutosAnterior <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> segundosAnterior <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> modoAnterior <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+
+  <span class="token keyword keyword-for">for</span> <span class="token punctuation">(</span><span class="token punctuation">;</span><span class="token punctuation">;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span><span class="token function">xSemaphoreTake</span><span class="token punctuation">(</span>relojMutex<span class="token punctuation">,</span> portMAX_DELAY<span class="token punctuation">)</span> <span class="token operator">==</span> pdTRUE<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      bool cambios <span class="token operator">=</span> <span class="token punctuation">(</span>horas <span class="token operator">!=</span> horasAnterior<span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token punctuation">(</span>minutos <span class="token operator">!=</span> minutosAnterior<span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token punctuation">(</span>segundos <span class="token operator">!=</span> segundosAnterior<span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token punctuation">(</span>modo <span class="token operator">!=</span> modoAnterior<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>cambios<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// Muestra formato de reloj</span>
+        Serial<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%02d:%02d:%02d"</span><span class="token punctuation">,</span> horas<span class="token punctuation">,</span> minutos<span class="token punctuation">,</span> segundos<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// Muestra modo actual</span>
+        <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>modo <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">" [Modo Normal]"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword keyword-else">else</span> <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>modo <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span> Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">" [Ajuste Horas]"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword keyword-else">else</span> <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>modo <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">)</span> Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">" [Ajuste Minutos]"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// Actualiza los valores anteriores</span>
+        horasAnterior <span class="token operator">=</span> horas<span class="token punctuation">;</span>
+        minutosAnterior <span class="token operator">=</span> minutos<span class="token punctuation">;</span>
+        segundosAnterior <span class="token operator">=</span> segundos<span class="token punctuation">;</span>
+        modoAnterior <span class="token operator">=</span> modo<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token function">xSemaphoreGive</span><span class="token punctuation">(</span>relojMutex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">vTaskDelay</span><span class="token punctuation">(</span><span class="token function">pdMS_TO_TICKS</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Refresco cada 100ms</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// --------------------- TAREA: CONTROL DE LOS LEDS -------------------------</span>
+<span class="token keyword keyword-void">void</span> <span class="token function">TareaControlLEDs</span><span class="token punctuation">(</span><span class="token keyword keyword-void">void</span> <span class="token operator">*</span>pvParameters<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  bool estadoLedSegundos <span class="token operator">=</span> false<span class="token punctuation">;</span>
+
+  <span class="token keyword keyword-for">for</span> <span class="token punctuation">(</span><span class="token punctuation">;</span><span class="token punctuation">;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span><span class="token function">xSemaphoreTake</span><span class="token punctuation">(</span>relojMutex<span class="token punctuation">,</span> portMAX_DELAY<span class="token punctuation">)</span> <span class="token operator">==</span> pdTRUE<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      estadoLedSegundos <span class="token operator">=</span> <span class="token operator">!</span>estadoLedSegundos<span class="token punctuation">;</span> <span class="token comment">// Cambia el estado del LED de segundos</span>
+      <span class="token function">digitalWrite</span><span class="token punctuation">(</span>LED_SEGUNDOS<span class="token punctuation">,</span> estadoLedSegundos<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Parpadea cada 500ms</span>
+
+      <span class="token function">digitalWrite</span><span class="token punctuation">(</span>LED_MODO<span class="token punctuation">,</span> modo <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Enciende LED de modo si no estamos en modo normal</span>
+
+      <span class="token function">xSemaphoreGive</span><span class="token punctuation">(</span>relojMutex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">vTaskDelay</span><span class="token punctuation">(</span><span class="token function">pdMS_TO_TICKS</span><span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Refresco cada 500ms</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><h6 id="funcionamiento">Funcionamiento </h6>
+<p>Este código implementa un reloj en tiempo real (horas, minutos y segundos) utilizando un ESP32 con FreeRTOS. El tiempo se muestra por el monitor serie, y puedes ajustar la hora usando dos botones.</p>
+<ul>
+<li>El reloj avanza automáticamente cada segundo.</li>
+<li>Puedes ajustar horas o minutos usando dos pulsadores:
+<ul>
+<li>Uno para cambiar de modo (modo normal / ajustar horas / ajustar minutos)</li>
+<li>Otro para incrementar el valor correspondiente (hora o minuto).</li>
+</ul>
+</li>
+<li>Hay dos LEDs:
+<ul>
+<li>Uno parpadea cada segundo (simula el segundero).</li>
+<li>Otro se enciende cuando estás en modo ajuste (ajustar horas o ajustar minutos).</li>
+</ul>
+</li>
+</ul>
+<p>Cada vez que cambia la hora, minuto, segundo o modo, aparece una línea como esta por el monitor serial:</p>
+<pre data-role="codeBlock" data-info="c" class="language-c c"><code><span class="token number">14</span><span class="token operator">:</span><span class="token number">25</span><span class="token operator">:</span><span class="token number">03</span> <span class="token punctuation">[</span>Modo Normal<span class="token punctuation">]</span>
+<span class="token number">14</span><span class="token operator">:</span><span class="token number">25</span><span class="token operator">:</span><span class="token number">03</span> <span class="token punctuation">[</span>Ajuste Horas<span class="token punctuation">]</span>
+<span class="token number">14</span><span class="token operator">:</span><span class="token number">25</span><span class="token operator">:</span><span class="token number">03</span> <span class="token punctuation">[</span>Ajuste Minutos<span class="token punctuation">]</span>
+</code></pre><p>También, al ajustar con los botones:</p>
+<pre data-role="codeBlock" data-info="c" class="language-c c"><code>Horas ajustadas a<span class="token operator">:</span> <span class="token number">15</span>
+Minutos ajustados a<span class="token operator">:</span> <span class="token number">30</span>
+Cambio de modo<span class="token operator">:</span> <span class="token number">1</span>
+</code></pre><h6 id="video-demostración">Video demostración </h6>
+<p><a href="https://drive.google.com/file/d/1384KYViyQ7NKEjaRN_xytpBGW6w5jnWe/view?usp=share_link">https://drive.google.com/file/d/1384KYViyQ7NKEjaRN_xytpBGW6w5jnWe/view?usp=share_link</a></p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
