@@ -1,0 +1,234 @@
+<!DOCTYPE html><html><head>
+      <title>Practica6_David_Hernandez</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/davidhm/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.18/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="practica-6---buses-de-comunicación-ii-spi">PRACTICA 6 :  Buses de comunicación II (SPI) </h1>
+<h3 id="material">MATERIAL </h3>
+<p>Para esta practica necesitaremos el microcontrolador ESP32, Tarjeta microSD y módulo lector, un Sensor lectura RFID, cables y una protoboard.</p>
+  <div style="display: flex; justify-content: center; gap: 10px;">
+      <img src="https://ae04.alicdn.com/kf/S8dee2f4cafc344e1b57ebc21ad5c11a4P.jpg" alt="ESP32" width="150">
+      <img src="https://www.electronics-lab.com/wp-content/uploads/2018/02/Micro-SD-Card-Module.jpg" alt="ESP32" width="150">
+      <img src="http://www.naylampmechatronics.com/797-large_default/modulo-rfid-mfrc522-.jpg" alt="ESP32" width="150">
+      <img src="https://cdn.bodanius.com/media/1/0d8100207_breadboard-wit-400-punten_x.png" alt="Protoaboard" width="150">
+      <img src="https://www.topcable.com/blog-electric-cable/wp-content/uploads/2014/11/topflex-h05vk-h07vk-colores.jpg" alt="Cables" width="150">
+  </div>
+<h3 id="objetivo-y-funcionalidad-de-la-practica">OBJETIVO Y FUNCIONALIDAD DE LA PRACTICA </h3>
+<p>El objetivo de la practica es comprender el funcionamiento del bus spi</p>
+<p>Existen muchos dispositivos que tienen instalado el SPI para su control ; si bien en estas practicas vamos a poner<br>
+enfasis en aquellos dispositivos que a traves de comentarios de los alumnos son de facil obtencion .</p>
+<p>Utilizaremos una lectura de SD</p>
+<p>hardware :  <a href="https://www.amazon.es/gp/product/B06XHJTGGC/ref=ppx_yo_dt_b_asin_title_o08_s00?ie=UTF8&amp;psc=1">https://www.amazon.es/gp/product/B06XHJTGGC/ref=ppx_yo_dt_b_asin_title_o08_s00?ie=UTF8&amp;psc=1</a></p>
+<p><img src="https://www.electronics-lab.com/wp-content/uploads/2018/02/Micro-SD-Card-Module.jpg" alt=""></p>
+<p>Utilizaremos una lectura RFID</p>
+<p>hardware : <a href="https://www.amazon.es/BUYGOO-Keychain-Module-Reader-Arduino/dp/B07D9C82W8/ref=sr_1_7?adgrpid=64168290956&amp;dchild=1&amp;gclid=Cj0KCQjw9_mDBhCGARIsAN3PaFM9-kfIgN51lwJEzMFffK_oXlGh0EMOYz9he8RiqdjbXX8q_oYJGW0aAobkEALw_wcB&amp;hvadid=320777693966&amp;hvdev=c&amp;hvlocphy=1005433&amp;hvnetw=g&amp;hvqmt=e&amp;hvrand=2288607395559069836&amp;hvtargid=kwd-302776364356&amp;hydadcr=11857_1752977&amp;keywords=rc522+rfid+module&amp;qid=1618925460&amp;sr=8-7">https://www.amazon.es/BUYGOO-Keychain-Module-Reader-Arduino/dp/B07D9C82W8/ref=sr_1_7?adgrpid=64168290956&amp;dchild=1&amp;gclid=Cj0KCQjw9_mDBhCGARIsAN3PaFM9-kfIgN51lwJEzMFffK_oXlGh0EMOYz9he8RiqdjbXX8q_oYJGW0aAobkEALw_wcB&amp;hvadid=320777693966&amp;hvdev=c&amp;hvlocphy=1005433&amp;hvnetw=g&amp;hvqmt=e&amp;hvrand=2288607395559069836&amp;hvtargid=kwd-302776364356&amp;hydadcr=11857_1752977&amp;keywords=rc522+rfid+module&amp;qid=1618925460&amp;sr=8-7</a></p>
+<p><img src="http://www.naylampmechatronics.com/797-large_default/modulo-rfid-mfrc522-.jpg" alt=""></p>
+<h2 id="ejercicio-practico-1--lecturaescritura--de-memoria-sd">Ejercicio Practico 1  LECTURA/ESCRITURA  DE MEMORIA SD </h2>
+<h4 id="código-comentado">Código comentado </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>#include &lt;SPI.h&gt;     // Librería para comunicación SPI
+#include &lt;SD.h&gt;      // Librería para usar tarjetas SD
+
+// Definimos los pines personalizados para SPI
+#define CS_PIN    5   // Pin de Chip Select (CS)
+#define SCK_PIN   18  // Pin de reloj SPI (SCK)
+#define MISO_PIN  2   // Pin de salida de datos del esclavo (MISO)
+#define MOSI_PIN  15  // Pin de entrada de datos del esclavo (MOSI)
+
+// Creamos una instancia de la clase SPI para el bus SPI1 (FSPI)
+SPIClass spi = SPIClass(FSPI);
+
+// Variable global para manejar archivos en la tarjeta SD
+File myFile;
+
+void setup() {
+  Serial.begin(115200);  // Inicia la comunicación por puerto serie a 115200 baudios
+  delay(2000);           // Espera 2 segundos para dar tiempo a que el puerto serie se conecte
+
+  // Inicializamos el bus SPI con los pines personalizados
+  spi.begin(SCK_PIN, MISO_PIN, MOSI_PIN, CS_PIN);
+
+  Serial.print("Iniciando SD... ");
+
+  // Intentamos inicializar la tarjeta SD usando el SPI personalizado y velocidad de 1MHz
+  if (!SD.begin(CS_PIN, spi, 1000000)) {
+    Serial.println("Fallo. Verifica:");
+    Serial.println("- Pines y conexiones");
+    Serial.println("- Formato FAT32");
+    Serial.println("- Resistencia pull-up");
+    while (1);  // Si falla, detiene el programa en un bucle infinito
+  }
+
+  Serial.println("Correcto");  // Si todo va bien, continúa
+
+  // Intentamos abrir el archivo "myFile.txt" desde la tarjeta SD
+  myFile = SD.open("/myFile.txt");
+  if (myFile) {
+    Serial.println("Contenido:");
+    
+    // Leemos y mostramos el contenido del archivo byte por byte
+    while (myFile.available()) {
+      Serial.write(myFile.read());
+    }
+    
+    myFile.close();  // Cerramos el archivo
+  } else {
+    Serial.println("Error abriendo archivo");  // Si no se puede abrir el archivo, muestra un error
+  }
+}
+
+void loop() {
+  // Bucle principal vacío, ya que solo usamos setup()
+}
+
+</code></pre><h4 id="funcionamiento">Funcionamiento </h4>
+<ol>
+<li>Configura SPI personalizado usando pines específicos en lugar del SPI por defecto.</li>
+<li>Inicia la comunicación serial para mostrar mensajes en el monitor.</li>
+<li>Intenta inicializar la tarjeta SD con esos pines y velocidad de 1 MHz.
+<ul>
+<li>Si falla, muestra errores y se detiene.</li>
+</ul>
+</li>
+<li>Abre el archivo /myFile.txt:
+<ul>
+<li>Si lo encuentra, muestra su contenido en el monitor serial.</li>
+<li>Si no, muestra un mensaje de error.</li>
+</ul>
+</li>
+<li>El loop() está vacío porque todo sucede una sola vez.</li>
+</ol>
+<h4 id="salida-monitor-serie">Salida monitor serie </h4>
+<p>Si todo funciona correctamente aparecera por pantalla:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Iniciando SD... Correcto
+Contenido:
+(contenido del archivo txt, en mi caso, Prueba practica 6 (part1))
+</code></pre><p>En mi código he implementado diferentes pasos para verificar que todo funcione correctamente, o detectar más facilmente fallos. Estos errores te los mostrará de la siguiente forma por el monitor serie:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Iniciando SD... Fallo. Verifica:
+- Pines y conexiones
+- Formato FAT32
+- Resistencia pull-up
+</code></pre><h4 id="video-y-foto-demostración">Video y foto demostración </h4>
+<p><a href="https://drive.google.com/file/d/1d_OZs0m80aTNbgZWGsfb0BmogyupS0E2/view?usp=share_link">https://drive.google.com/file/d/1d_OZs0m80aTNbgZWGsfb0BmogyupS0E2/view?usp=share_link</a><br>
+<a href="https://drive.google.com/file/d/1HCpVZHTdIxsG_Pt4plCRzjohp50I5vj5/view?usp=share_link">https://drive.google.com/file/d/1HCpVZHTdIxsG_Pt4plCRzjohp50I5vj5/view?usp=share_link</a></p>
+<h2 id="ejercicio-practico-2-lectura-de-etiqueta-rfid">Ejercicio Practico 2 LECTURA DE ETIQUETA RFID </h2>
+<p>referencia:  <a href="https://naylampmechatronics.com/blog/22_tutorial-modulo-lector-rfid-rc522.html">https://naylampmechatronics.com/blog/22_tutorial-modulo-lector-rfid-rc522.html</a></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>// Incluye la librería para comunicación SPI (protocolo que usa el RFID)
+#include &lt;SPI.h&gt;       
+// Incluye la librería para manejar el lector RFID RC522      
+#include &lt;MFRC522.h&gt;          
+// Incluye funciones básicas de Arduino  
+#include &lt;Arduino.h&gt;            
+
+// Pines personalizados para ESP32-S3
+// Define el pin 5 como SS (SDA) del lector RFID
+#define SS_PIN 5       
+// Define el pin 6 para enviar datos SPI (MOSI)         
+#define MOSI_PIN 6      
+// Define el pin 7 para recibir datos SPI (MISO)
+#define MISO_PIN 7     
+// Define el pin 8 como reloj SPI (SCK)         
+#define SCK_PIN 8          
+// Define el pin 4 como reset del lector RFID
+#define RST_PIN 4        
+// Crea un objeto del lector RFID con los pines SS y RST definidos       
+MFRC522 mfrc522(SS_PIN, RST_PIN);  
+
+void setup() {
+  // Inicia la comunicación serial a 115200 baudios
+  Serial.begin(115200);          
+  // Espera a que se abra el monitor serial (especialmente útil para algunas placas)   
+  while (!Serial);                  
+
+  // Inicializa SPI con tus pines personalizados
+  // Configura la comunicación SPI con los pines personalizados
+  SPI.begin(SCK_PIN, MISO_PIN, MOSI_PIN, SS_PIN);  
+
+  // Inicializa el módulo RC522
+  // Inicializa el lector RFID
+  mfrc522.PCD_Init();              
+  // Muestra un mensaje en el monitor serial
+  Serial.println("Lector RFID listo. Acerca una tarjeta...");  
+}
+
+void loop() {
+  // Revisa si hay una nueva tarjeta
+  if (!mfrc522.PICC_IsNewCardPresent()) {
+    // Si no hay tarjeta, termina la función y vuelve a empezar el loop
+    return;                        
+  }
+
+  // Intenta leer la tarjeta
+  if (!mfrc522.PICC_ReadCardSerial()) {
+    // Si no se puede leer la tarjeta, termina la función
+    return;                        
+  }
+
+  // Muestra el UID de la tarjeta
+  // Muestra un mensaje antes del UID
+  Serial.print("UID de la tarjeta: ");       
+  // Recorre cada byte del UID    
+  for (byte i = 0; i &lt; mfrc522.uid.size; i++) {  
+    // Agrega un cero si el byte es menor a 0x10 (para formato)
+    Serial.print(mfrc522.uid.uidByte[i] &lt; 0x10 ? "0" : "");  
+    // Muestra el byte en formato hexadecimal
+    Serial.print(mfrc522.uid.uidByte[i], HEX);         
+    // Agrega ":" entre bytes, excepto al final      
+    Serial.print(i &lt; mfrc522.uid.size - 1 ? ":" : "");       
+  }
+  // Salta a la siguiente línea en el monitor serial
+  Serial.println();  
+
+  // Finaliza comunicación con la tarjeta
+  // Detiene la comunicación con la tarjeta leída
+  mfrc522.PICC_HaltA();  
+}
+
+</code></pre><h4 id="funcionamiento-1">Funcionamiento </h4>
+<p>Este código está diseñado para funcionar con una placa ESP32-S3 y un lector de tarjetas RFID modelo RC522. El propósito principal del programa es detectar cuando se acerca una tarjeta RFID al lector y mostrar en el monitor serial su identificador único (UID), que es como una huella digital de cada tarjeta.</p>
+<p>Primero, el programa configura los pines del ESP32 que se usarán para comunicarse con el lector mediante el protocolo SPI. Luego, en la función de inicio (setup), se establece la comunicación serial para poder mostrar mensajes en pantalla y se inicializa el lector RFID.</p>
+<p>En el ciclo principal (loop), el programa verifica constantemente si hay una nueva tarjeta presente. Si no la hay, simplemente espera. Si detecta una tarjeta, intenta leerla. Si la lectura es exitosa, muestra el UID de la tarjeta en el monitor serial.</p>
+<h4 id="salida-monitor-serie-1">Salida monitor serie </h4>
+<ol>
+<li>Al iniciar el programa:</li>
+</ol>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Lector RFID listo. Acerca una tarjeta...
+</code></pre><ol start="2">
+<li>Cuando se acerca una tarjeta RFID válida:</li>
+</ol>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>UID de la tarjeta: XX:XX:XX:XX
+</code></pre><p>Donde XX:XX:XX:XX representa el UID de la tarjeta en formato hexadecimal. La cantidad de bloques (XX) puede variar dependiendo del tipo de tarjeta (normalmente son 4, 7 o 10 dígitos hexadecimales separados por dos puntos).</p>
+<h4 id="video-demostración">Video demostración </h4>
+<p><a href="https://drive.google.com/file/d/19LtfQhU7a8HSu9H82dNRn-NjvWdHbRe-/view?usp=share_link">https://drive.google.com/file/d/19LtfQhU7a8HSu9H82dNRn-NjvWdHbRe-/view?usp=share_link</a></p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
