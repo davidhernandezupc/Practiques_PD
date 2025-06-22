@@ -18,7 +18,7 @@
 #define SPI_SCK     12
 
 // Datos de la red WiFi en modo punto de acceso
-const char* ssid = "ESP32-David_Laia";
+const char* ssid = "ESP32-David_Laia"; 
 const char* password = "123456789";
 WiFiServer server(80); // Puerto 80 para HTTP
 
@@ -101,6 +101,7 @@ String getNextAvailableFilename() {
   }
 }
 
+"""
 // Extraer el número del nombre del archivo
 int extractAudioIndex(const String& filename) {
   int start = filename.indexOf("audio") + 5;
@@ -147,7 +148,7 @@ String listAudioFiles() {
   }
   return output;
 }
-
+"""
 // Configuración inicial del sistema
 void setup() {
   Serial.begin(115200);
